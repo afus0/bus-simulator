@@ -11,15 +11,15 @@ const createMap = ({ lat, lng }) => {
     });
   };
   
-  /**
+  /* 
    * Create google maps Marker instance.
    * @param {Object} map
    * @param {Object} position
    * @return {Object}
    */
-  const createMarker = ({ map, position }) => {
+  /*const createMarker = ({ map, position }) => {
     return new google.maps.Marker({ map, position });
-  };
+  };*/
   
   /**
    * Track the user location.
