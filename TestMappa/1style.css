@@ -1,0 +1,28 @@
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.map {
+    flex: 1;
+    background: #f0f0f0;
+}
+
+.info {
+    padding: 1rem;
+    margin: 0;
+}
+
+.info.error {
+    color: #fff;
+    background: #dc3545;
+}
+
+body{
+    padding: 100%;
+}
+#prova{
+    padding: 0%;
+}

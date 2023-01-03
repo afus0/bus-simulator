@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <style type="text/css">
+          html { height: 100% }
+          body { height: 100%; margin: 0; padding: 0 }
+          #map_canvas { height: 100% }
+
+          #map-canvas 
+        { 
+        height: 400px; 
+        width: 500px;
+        }
+        </style>
+
+   </script>
+        <script type="text/javascript">
+        function initialize() {
+
+            var myLatLng = new google.maps.LatLng( 45.791171, 8.935649 ),
+                myOptions = {
+                    zoom: 15,
+                    center: myLatLng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                    },
+                map = new google.maps.Map( document.getElementById( 'map-canvas' ), myOptions ),
+                marker = new google.maps.Marker( {icon: {
+                    url: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+                    // This marker is 20 pixels wide by 32 pixels high.
+                    size: new google.maps.Size(20, 32),
+                    // The origin for this image is (0, 0).
+                    origin: new google.maps.Point(0, 0),
+                    // The anchor for this image is the base of the flagpole at (0, 32).
+                    anchor: new google.maps.Point(0, 32)
+                }, position: myLatLng, map: map} );
+
+            marker.setMap( map );
+            moveBus( map, marker );
+
+        }
+
+
+
+        function moveBus( map, marker ) {
+            setTimeout(() => {
+                marker.setPosition( new google.maps.LatLng( 45.804950, 8.934997 ) );
+                map.panTo( new google.maps.LatLng( 45.804950, 8.934997 ) );
+            }, 5000)
+
+
+        };
+
+
+        </script>
+        </head>
+
+        <body onload="initialize()">
+        <script type="text/javascript">
+        //moveBus();
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD85hNMINjgwkDxCJFgZo7YNTJQR2tGNtU&callback=init"></script>
+        <div id="map-canvas" style="height: 500px; width: 500px;"></div>
+
+
+
+        </body>
+        </html>
