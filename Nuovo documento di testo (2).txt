@@ -1,0 +1,27 @@
+<div id="modal" class="nascondi">
+    <button id="close-modal">&times; clicca</button>
+    <h2>Bus C20</h2>
+    <img src="/img/token_1 (36).png" alt="Bus C20">
+    <p>Posti bus:70</p>
+    <p>Autista: Enrico</p>
+    <ul>
+      <li>Fermata 1: Duomo</li>
+      <li>Fermata 2: Cadorna</li>
+    </ul>
+    <p>Il bus FR8541 effettua il seguente percorso:</p>
+    <p>Duomo - Cadorna - Lambrate - Bicocca - San Donato</p>
+    <p>Orario della posizione attuale: 10:30</p>
+    <p>Orario della posizione prevista: 10:27</p>
+    <p>Ritardo stimanto: 3 minuti</p>
+    <p>Tempo di arrivo previsto:</p>
+  <ul>
+    <li>Duomo: 15 minuti</li>
+    <li>Cadorna: 30 minuti</li>
+    <li>Lambrate: 45 minuti</li>
+    <li>Bicocca: 60 minuti</li>
+    <li>San Donato: 65 minuti</li>
+  </ul>
+    <p>Frequenza: ogni 20 minuti</p>
+    <p>Orari: 6:00-22:00</p>
+    <p>Tariffa: 2,50 euro a tratta, 7,50 euro abbonamento giornaliero</p>
+  </div>
