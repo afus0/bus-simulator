@@ -2,6 +2,7 @@
 import { openModal } from "./finestra.js";
 
 
+
 // Funzione che fa partire maps
 function initMap() {
   // Posizione di partenza 
@@ -156,6 +157,9 @@ function initMap() {
 
 
 
+  
+
+
 
   // creazione linea rossa dopo aver percorso un marker
   const fermate_percorso = [
@@ -190,9 +194,42 @@ function initMap() {
     }
   }
 
+  var content = [
+    '<h1>Marker 1</h1><p>This is the first marker</p>',
+    '<h1>Marker 2</h1><p>This is the second marker</p>',
+    '<h1>Marker 3</h1><p>This is the third marker</p>'
+  ];
+
+
+  let currentInfoWindow;
+
+fermate.forEach(function(marker) {
+  marker.addListener('click', function() {
+    if (currentInfoWindow) {
+      currentInfoWindow.close();
+    }
+var i = 0;
+
+    var infoWindow = new google.maps.InfoWindow({
+      
+      content: content[i],
+  
+    });
+
+    i++;
+    infoWindow.open(map, marker);
+    currentInfoWindow = infoWindow;
+  });
+});
+
+
+
+
+
   // funzione che quando clicchi una fermata o pullman esce un popup informazioni
-  fermate[0].addListener("click", openModal);
-  fermate[1].addListener("click", openModal);
+  marker_partenza.addListener("click", openModal);
+  //fermate[0].addListener("click", openModal);
+  //fermate[1].addListener("click", openModal);
   marker_partenza.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
   var bus_interval = setInterval(moveBus, 1000);
 }
