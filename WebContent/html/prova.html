@@ -3,21 +3,49 @@
 <head>
   <title>Add Map</title>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<<<<<<< HEAD
 
   <link rel="stylesheet" type="text/css" href="../css/prova.css" />
   <link rel="stylesheet" href="../css/finestra.css">
   <script type="module" src="../js/gmaps.js"></script>
+=======
+  <link rel="stylesheet" type="text/css" href="/css/prova.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="/css/finestra.css">
+  <script type="module" src="/js/gmaps.js"></script>
+>>>>>>> 7b5bac9d7b26604711c73adf0d999fcd7584f10b
 </head>
 
 <body>
   <h3>My Google Maps Demo</h3>
- 
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="Rosso"  onclick="checkbox[0]()" checked>
+    <label class="form-check-label" for="flexCheckDefault">
+      Bus Rosso
+    </label>
+    <br>
+    <input class="form-check-input" type="checkbox" value="" id="Giallo"  checked >
+    <label class="form-check-label" for="flexCheckDefault">
+      Bus Giallo
+    </label>
+    <br>
+    <input class="form-check-input" type="checkbox" value="" id="Verde"checked >
+    <label class="form-check-label" for="flexCheckDefault">
+      Bus Verde
+    </label>
+    <br>
+    <input class="form-check-input" type="checkbox" value="" id="Blu" checked>
+    <label class="form-check-label" for="flexCheckDefault">
+      Bus Blu
+    </label>
+  
   <!--The div element for the map -->
- 
+
   <div id="map">
-    
+
   </div>
-  <div id="modal" class="nascondi" >
+
+  <div id="modal" class="nascondi">
     <button id="close-modal">Chiudi la finestra</button>
     <h2>Bus FR8541</h2>
     <ul>
@@ -25,7 +53,25 @@
       <li>Fermata 2: Cadorna</li>
     </ul>
   </div>
-  <div id="modal" class="nascondi" >
+  <!--second pullman -->
+  <div id="modal" class="nascondi">
+    <button id="close-modal">Chiudi la finestra</button>
+    <h2>Bus FR8541</h2>
+    <ul>
+      <li>Fermata 1: Duomo</li>
+      <li>Fermata 2: Cadorna</li>
+    </ul>
+  </div>
+  <!--terzo pullman -->
+  <div id="modal" class="nascondi">
+    <button id="close-modal">Chiudi la finestra</button>
+    <h2>Bus FR8541</h2>
+    <ul>
+      <li>Fermata 1: Duomo</li>
+      <li>Fermata 2: Cadorna</li>
+    </ul>
+  </div>
+  <div id="modal" class="nascondi">
     <button id="close-modal">Chiudi la finestra</button>
     <h2>Bus FR8541</h2>
     <ul>
@@ -38,11 +84,16 @@
      document has been parsed. For non-blocking uses, avoiding race conditions,
      and consistent behavior across browsers, consider loading using Promises
      with https://www.npmjs.com/package/@googlemaps/js-api-loader.
-    -->
+  -->
   <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD85hNMINjgwkDxCJFgZo7YNTJQR2tGNtU&callback=initMap&v=weekly"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD85hNMINjgwkDxCJFgZo7YNTJQR2tGNtU&libraries=geometry&callback=initMap&v=weekly"
     defer></script>
+<<<<<<< HEAD
   <script src="../js/finestra.js"></script>
+=======
+
+  <script src="/js/finestra.js"></script>
+>>>>>>> 7b5bac9d7b26604711c73adf0d999fcd7584f10b
 </body>
 
 </html>
