@@ -115,7 +115,7 @@ h5{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden
+    overflow: hidden;
 }
  
 .nav_logo,
