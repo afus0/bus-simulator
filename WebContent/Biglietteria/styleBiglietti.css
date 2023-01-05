@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+
+}
+
+#titolo {
+    margin-top: 50px;
+    text-align: center;
+    color: wheat;
+}
+
+#padre {
+    border: 3px #d2611a solid;
+    margin-top: 100px;
+    height: 604px;
+    border-radius: 5px;
+
+
+}
+
+#parteSinistra {
+
+    background-image: url('img/pexels-marcelo-moreira-2261702.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 40%;
+
+}
+
+#parteDestra {
+    width: 60%;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 25%;
+}
+
+#tariffa {
+    margin-top: 30px;
+}
+
+#btn-compra{
+    margin-top: 30px;
+    margin-left: 35%;
+}
+
+#icon {
+    color: wheat;
+    font-size: 50px;
+    margin-top: 500px;
+    margin-left: 41%;
+}
+
+
+#tutela {
+    color: wheat;
+
+}
+
+#padre-tutela{
+    text-align: center;
+    margin-top: 50px;
+}
