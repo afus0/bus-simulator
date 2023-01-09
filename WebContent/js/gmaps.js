@@ -1134,8 +1134,10 @@ function initMap() {
   }
 
   // funzione che quando clicchi una fermata o pullman esce un popup informazioni
-  markerFermateRossa[0].addListener("click", openModal);
-  markerFermateRossa[1].addListener("click", openModal);
+  marker_partenza.addListener("click", openModal);
+  marker_partenza2.addListener("click", openModal);
+  marker_partenza3.addListener("click", openModal);
+  marker_partenza4.addListener("click", openModal);
   marker_partenza.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
   marker_partenza2.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
   marker_partenza3.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
@@ -1146,7 +1148,7 @@ function initMap() {
   var bus_interval_green = setInterval(moveBusGreen, 1000);
   var bus_interval_blu = setInterval(moveBusBlu, 1000);
 
-// Add an event listener to the marker
+  // Add an event listener to the marker
 
   ////////////////////////////////CHECK BOX
   this.checkbox = [
@@ -1306,7 +1308,162 @@ function initMap() {
   // Bind the Autocomplete object to the search input
   var autocomplete = new google.maps.places.Autocomplete(input);
 
+
+
+
+
+
+
+
+
+
+
+  /*
+    /// CREAZIONE INFOWINDOW (popup delle fermate)
+    const contentString =
+    '<div id="content">' +
+    '<div id="siteNotice">' +
+    "</div>" +
+    '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
+    '<div id="bodyContent">' +
+    "<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large " +
+    "sandstone rock formation in the southern part of the " +
+    "Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) " +
+    "south west of the nearest large town, Alice Springs; 450&#160;km " +
+    "(280&#160;mi) by road. Kata Tjuta and Uluru are the two major " +
+    "features of the Uluru - Kata Tjuta National Park. Uluru is " +
+    "sacred to the Pitjantjatjara and Yankunytjatjara, the " +
+    "Aboriginal people of the area. It has many springs, waterholes, " +
+    "rock caves and ancient paintings. Uluru is listed as a World " +
+    "Heritage Site.</p>" +
+    '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
+    "https://en.wikipedia.org/w/index.php?title=Uluru</a> " +
+    "(last visited June 22, 2009).</p>" +
+    "</div>" +
+    "</div>";
+    
+  // Create the info window
+  var infoWindow = new google.maps.InfoWindow();
   
+  // Set the content of the info window
+  infoWindow.setContent('<h1>My Info Window</h1><p>Some content</p>');
+  
+  // Add an event listener to the marker
+  google.maps.event.addListener(markerFermateRossa[0], 'click', function() {
+  // Open the info window
+  infoWindow.open(map, markerFermateRossa[0]);
+  });*/
+
+
+
+  /////////////// TEMA SCURO
+
+  /*
+  // Imposta il tema scuro della mappa
+  map.setOptions({styles: [
+    {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+    {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+    {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+    {
+      featureType: 'administrative.locality',
+      elementType: 'labels.text.fill',
+      stylers: [{color: '#d59563'}]
+    },
+    {
+      featureType: 'poi',
+      elementType: 'labels',
+      stylers: [{visibility: 'off'}]
+    },
+    {
+      featureType: 'transit.station',
+      stylers: [{visibility: 'off'}]
+    },
+    {
+      featureType: 'transit.station.rail',
+      stylers: [{visibility: 'off'}]
+    },
+    {
+      featureType: 'poi',
+      elementType: 'labels.text.fill',
+      stylers: [{color: '#d59563'}]
+    },
+    {
+      featureType: 'poi.park',
+      elementType: 'geometry',
+      stylers: [{color: '#263c3f'}]
+    },
+    {
+      featureType: 'poi.park',
+      elementType: 'labels.text.fill',
+      stylers: [{color: '#6b9a76'}]
+    },
+    {
+      featureType: 'road',
+      elementType: 'geometry',
+      stylers: [{color: '#38414e'}]
+    },
+    {
+      featureType: 'road',
+      elementType: 'geometry.stroke',
+      stylers: [{color: '#212a37'}]
+    },
+    {
+      featureType: 'road',
+      elementType: 'labels.text.fill',
+      stylers: [{color: '#9ca5b3'}]
+    },
+    {
+      featureType: 'road.highway',
+      elementType: 'geometry',
+      stylers: [{color: '#746855'}]
+    },
+    {
+      featureType: 'road.highway',
+      elementType: 'geometry.stroke',
+      stylers: [{color: '#1f2835'}]
+    },
+    {
+      featureType: 'road.highway',
+      elementType: 'labels.text.fill',
+      stylers: [{color: '#f3d19c'}]
+    },
+    {
+      featureType: 'transit',
+      elementType: 'geometry',
+      stylers: [{color: '#2f3948'}]
+    },
+      ]
+        } 
+          )*/
+
+
+
+
+
+  // PARTE SIMONE
+
+  var content = [
+    '<h1>Marker sfogo</h1><p>Evvai PoDio</p>',
+    '<h1>Marker felicità</h1><p>Siiiiiii</p>',
+    '<h1>Marker sfottimento</h1><p>Fanculo codice di merda</p>'
+  ];
+
+  let currentInfoWindow;
+
+  markerFermateRossa.forEach(function (marker, i) {
+    marker.addListener('click', function () {
+      if (currentInfoWindow) {
+        currentInfoWindow.close();
+      }
+
+      var infoWindow = new google.maps.InfoWindow({
+        content: content[i]
+      });
+
+      infoWindow.open(map, marker);
+      currentInfoWindow = infoWindow;
+    });
+  });
 
 
 
@@ -1317,39 +1474,12 @@ function initMap() {
 
 
 
-  /// CREAZIONE INFOWINDOW (popup delle fermate)
-  const contentString =
-  '<div id="content">' +
-  '<div id="siteNotice">' +
-  "</div>" +
-  '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
-  '<div id="bodyContent">' +
-  "<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large " +
-  "sandstone rock formation in the southern part of the " +
-  "Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) " +
-  "south west of the nearest large town, Alice Springs; 450&#160;km " +
-  "(280&#160;mi) by road. Kata Tjuta and Uluru are the two major " +
-  "features of the Uluru - Kata Tjuta National Park. Uluru is " +
-  "sacred to the Pitjantjatjara and Yankunytjatjara, the " +
-  "Aboriginal people of the area. It has many springs, waterholes, " +
-  "rock caves and ancient paintings. Uluru is listed as a World " +
-  "Heritage Site.</p>" +
-  '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-  "https://en.wikipedia.org/w/index.php?title=Uluru</a> " +
-  "(last visited June 22, 2009).</p>" +
-  "</div>" +
-  "</div>";
-// Create the info window
-var infoWindow = new google.maps.InfoWindow();
 
-// Set the content of the info window
-infoWindow.setContent('<h1>My Info Window</h1><p>Some content</p>');
 
-// Add an event listener to the marker
-google.maps.event.addListener(markerFermateRossa[0], 'click', function() {
-// Open the info window
-infoWindow.open(map, markerFermateRossa[0]);
-});
+
+
+
+
 }
 // fa partire la mappa di google all'avvio della pagina
 window.initMap = initMap;
