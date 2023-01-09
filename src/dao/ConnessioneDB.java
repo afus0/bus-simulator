@@ -9,7 +9,7 @@ public class ConnessioneDB {
 
 	private static Connection con = null;
 	// parametri di configurazione del DB
-	private static final String NOME_DB = "jdbcweb";
+	private static final String NOME_DB = "bus-simulator";
 	private static final int PORT = 3306;
 	private static final String SERVER_NAME = "localhost";
 	private static final String USERNAME = "root";
@@ -51,5 +51,4 @@ public class ConnessioneDB {
 		}
 
 	}
-
 }
