@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/finestra.css">
+    <title>Creazione finestra modale</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200 flex flex-col items-center justify-center">
+    
+
+    <h1>Creazione di una finestra modale</h1>
+
+    <button id="open-modal" class="p-3 m-3 bg-blue-300 rounded-md text-white">Apri finestra</button>
+
+    <div id="modal" class="nascondi" >
+        <button id="close-modal">Chiudi la finestra</button>
+        <h2>Bus FR8541</h2>
+        <ul>
+            <li>Fermata 1: Duomo</li>
+            <li>Fermata 2: Cadorna</li>
+        </ul>
+    </div>
+
+    
+    <script src="/js/finestra.js"></script>
+</body>
+</html>
