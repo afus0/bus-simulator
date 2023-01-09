@@ -1,5 +1,5 @@
 // import della funzione "apri popup" preso dal file esterno
-import { openModal } from "./finestra.js";
+import { openModal } from "../js/finestra.js";
 
 
 // Funzione che fa partire maps
@@ -39,15 +39,13 @@ function initMap() {
     }
   });
 
-  console.log(marker_partenza.getPosition());
-
   // Creazione array di markers per bus rosso
   var markerFermateRossa = [
     new google.maps.Marker({
       position: { lat: 45.46642621575427, lng: 9.197590291846295 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -57,7 +55,7 @@ function initMap() {
       position: { lat: 45.465970429025646, lng: 9.197093688085612 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -67,7 +65,7 @@ function initMap() {
       position: { lat: 45.46553707660491, lng: 9.195870511609105 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -77,7 +75,7 @@ function initMap() {
       position: { lat: 45.464676209169134, lng: 9.192768826757328 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -87,7 +85,7 @@ function initMap() {
       position: { lat: 45.463736621920305, lng: 9.192762447353758 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -97,7 +95,7 @@ function initMap() {
       position: { lat: 45.463172852573805, lng: 9.187569061380524 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -107,7 +105,7 @@ function initMap() {
       position: { lat: 45.463744354266986, lng: 9.18833490737487 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -117,7 +115,7 @@ function initMap() {
       position: { lat: 45.46151936554318, lng: 9.185425894160376 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -127,7 +125,7 @@ function initMap() {
       position: { lat: 45.46070923231423, lng: 9.18295840693557 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -137,7 +135,7 @@ function initMap() {
       position: { lat: 45.460609461407735, lng: 9.182101140026067 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -147,7 +145,7 @@ function initMap() {
       position: { lat: 45.460709283843826, lng: 9.180005835947252 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -157,7 +155,7 @@ function initMap() {
       position: { lat: 45.46041508453437, lng: 9.177918175924725 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -167,7 +165,7 @@ function initMap() {
       position: { lat: 45.46097775336577, lng: 9.175658272061987 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -177,7 +175,7 @@ function initMap() {
       position: { lat: 45.46200737094371, lng: 9.174485216234782 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -318,7 +316,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -330,7 +328,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -342,7 +340,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -354,7 +352,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -366,7 +364,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -378,7 +376,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -390,7 +388,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -402,7 +400,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -414,7 +412,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -426,7 +424,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -438,7 +436,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -450,7 +448,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -560,7 +558,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -572,7 +570,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -584,7 +582,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -596,7 +594,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -608,7 +606,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -620,7 +618,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -632,7 +630,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -644,7 +642,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -656,7 +654,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -668,7 +666,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -680,7 +678,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -692,7 +690,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -704,7 +702,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -716,7 +714,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -728,7 +726,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -877,7 +875,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -889,7 +887,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -901,7 +899,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -913,7 +911,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -925,7 +923,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -937,7 +935,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -949,7 +947,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -961,7 +959,7 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
