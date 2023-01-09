@@ -195,35 +195,109 @@ function initMap() {
   }
 
   var content = [
-    '<h1>Marker 1</h1><p>This is the first marker</p>',
-    '<h1>Marker 2</h1><p>This is the second marker</p>',
-    '<h1>Marker 3</h1><p>This is the third marker</p>'
+    '<h1>Marker sfogo</h1><p>Evvai PoDio</p>',
+    '<h1>Marker felicità</h1><p>Siiiiiii</p>',
+    '<h1>Marker sfottimento</h1><p>Fanculo codice di merda</p>'
   ];
 
 
   let currentInfoWindow;
 
-fermate.forEach(function(marker) {
-  marker.addListener('click', function() {
-    if (currentInfoWindow) {
-      currentInfoWindow.close();
-    }
-var i = 0;
-
-    var infoWindow = new google.maps.InfoWindow({
-      
-      content: content[i],
+  fermate.forEach(function(marker, i) {
+    marker.addListener('click', function() {
+      if (currentInfoWindow) {
+        currentInfoWindow.close();
+      }
   
+      var infoWindow = new google.maps.InfoWindow({
+        content: content[i]
+      });
+  
+      infoWindow.open(map, marker);
+      currentInfoWindow = infoWindow;
     });
-
-    i++;
-    infoWindow.open(map, marker);
-    currentInfoWindow = infoWindow;
   });
-});
+  
 
 
 
+// Imposta il tema scuro della mappa
+map.setOptions({styles: [
+  {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+  {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+  {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+  {
+    featureType: 'administrative.locality',
+    elementType: 'labels.text.fill',
+    stylers: [{color: '#d59563'}]
+  },
+  {
+    featureType: 'poi',
+    elementType: 'labels',
+    stylers: [{visibility: 'off'}]
+  },
+  {
+    featureType: 'transit.station',
+    stylers: [{visibility: 'off'}]
+  },
+  {
+    featureType: 'transit.station.rail',
+    stylers: [{visibility: 'off'}]
+  },
+  {
+    featureType: 'poi',
+    elementType: 'labels.text.fill',
+    stylers: [{color: '#d59563'}]
+  },
+  {
+    featureType: 'poi.park',
+    elementType: 'geometry',
+    stylers: [{color: '#263c3f'}]
+  },
+  {
+    featureType: 'poi.park',
+    elementType: 'labels.text.fill',
+    stylers: [{color: '#6b9a76'}]
+  },
+  {
+    featureType: 'road',
+    elementType: 'geometry',
+    stylers: [{color: '#38414e'}]
+  },
+  {
+    featureType: 'road',
+    elementType: 'geometry.stroke',
+    stylers: [{color: '#212a37'}]
+  },
+  {
+    featureType: 'road',
+    elementType: 'labels.text.fill',
+    stylers: [{color: '#9ca5b3'}]
+  },
+  {
+    featureType: 'road.highway',
+    elementType: 'geometry',
+    stylers: [{color: '#746855'}]
+  },
+  {
+    featureType: 'road.highway',
+    elementType: 'geometry.stroke',
+    stylers: [{color: '#1f2835'}]
+  },
+  {
+    featureType: 'road.highway',
+    elementType: 'labels.text.fill',
+    stylers: [{color: '#f3d19c'}]
+  },
+  {
+    featureType: 'transit',
+    elementType: 'geometry',
+    stylers: [{color: '#2f3948'}]
+  },
+    ]
+      } 
+        )
+        
 
 
   // funzione che quando clicchi una fermata o pullman esce un popup informazioni
