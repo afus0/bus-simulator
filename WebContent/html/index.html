@@ -28,8 +28,8 @@
     </div>
     <div class="container" id="search">
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-light" type="submit" id="first-search">Search</button>
+        <input id="pac-input" class="form-control me-2 controls" type="search" placeholder="Dove ti trovi?"
+          aria-label="Search">
       </form>
     </div>
   </header>
@@ -56,7 +56,7 @@
     </nav>
 
   </div>
-  
+
   <!--Container Main start-->
   <div class="height-100 bg-light" id="gmappa">
 
@@ -77,12 +77,12 @@
            with https://www.npmjs.com/package/@googlemaps/js-api-loader.
         -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD85hNMINjgwkDxCJFgZo7YNTJQR2tGNtU&libraries=geometry&callback=initMap&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD85hNMINjgwkDxCJFgZo7YNTJQR2tGNtU&libraries=geometry,places&callback=initMap&v=weekly"
       defer></script>
 
     <script src="../js/finestra.js"></script>
   </div>
-  
+
   <!--Container Main end-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

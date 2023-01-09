@@ -11,73 +11,75 @@
 
 <body>
   <h3>My Google Maps Demo</h3>
+  <input id="pac-input" type="text" placeholder="Dove ti trovi?">
   <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="Rosso"  onclick="checkbox[0]()" checked>
+    <input class="form-check-input" type="checkbox" value="" id="Rosso" onclick="checkbox[0]()" checked>
     <label class="form-check-label" for="flexCheckDefault">
       Bus Rosso
     </label>
     <br>
-    <input class="form-check-input" type="checkbox" value="" id="Giallo"  checked >
+    <input class="form-check-input" type="checkbox" value="" id="Giallo" onclick="checkbox[1]()" checked>
     <label class="form-check-label" for="flexCheckDefault">
       Bus Giallo
     </label>
     <br>
-    <input class="form-check-input" type="checkbox" value="" id="Verde"checked >
+    <input class="form-check-input" type="checkbox" value="" id="Verde" onclick="checkbox[2]()" checked>
     <label class="form-check-label" for="flexCheckDefault">
       Bus Verde
     </label>
     <br>
-    <input class="form-check-input" type="checkbox" value="" id="Blu" checked>
+    <input class="form-check-input" type="checkbox" value="" id="Blu" onclick="checkbox[3]()" checked>
     <label class="form-check-label" for="flexCheckDefault">
       Bus Blu
     </label>
-  
-  <!--The div element for the map -->
 
-  <div id="map">
+    <!--The div element for the map -->
 
-  </div>
+    <div id="map">
 
-  <div id="modal" class="nascondi">
-    <button id="close-modal">Chiudi la finestra</button>
-    <h2>Bus FR8541</h2>
-    <ul>
-      <li>Fermata 1: Duomo</li>
-      <li>Fermata 2: Cadorna</li>
-    </ul>
-  </div>
-  <!--second pullman -->
-  <div id="modal" class="nascondi">
-    <button id="close-modal">Chiudi la finestra</button>
-    <h2>Bus FR8541</h2>
-    <ul>
-      <li>Fermata 1: Duomo</li>
-      <li>Fermata 2: Cadorna</li>
-    </ul>
-  </div>
-  <!--terzo pullman -->
-  <div id="modal" class="nascondi">
-    <button id="close-modal">Chiudi la finestra</button>
-    <h2>Bus FR8541</h2>
-    <ul>
-      <li>Fermata 1: Duomo</li>
-      <li>Fermata 2: Cadorna</li>
-    </ul>
-  </div>
-  <div id="modal" class="nascondi">
-    <button id="close-modal">Chiudi la finestra</button>
-    <h2>Bus FR8541</h2>
-    <ul>
-      <li>Fermata 1: Duomo</li>
-      <li>Fermata 2: Cadorna</li>
-    </ul>
-  </div>
-  <!-- 
+    </div>
+
+    <div id="modal" class="nascondi">
+      <button id="close-modal">Chiudi la finestra</button>
+      <h2>Bus FR8541</h2>
+      <ul>
+        <li>Fermata 1: Duomo</li>
+        <li>Fermata 2: Cadorna</li>
+      </ul>
+    </div>
+    <!--second pullman -->
+    <div id="modal" class="nascondi">
+      <button id="close-modal">Chiudi la finestra</button>
+      <h2>Bus FR8541</h2>
+      <ul>
+        <li>Fermata 1: Duomo</li>
+        <li>Fermata 2: Cadorna</li>
+      </ul>
+    </div>
+    <!--terzo pullman -->
+    <div id="modal" class="nascondi">
+      <button id="close-modal">Chiudi la finestra</button>
+      <h2>Bus FR8541</h2>
+      <ul>
+        <li>Fermata 1: Duomo</li>
+        <li>Fermata 2: Cadorna</li>
+      </ul>
+    </div>
+    <div id="modal" class="nascondi">
+      <button id="close-modal">Chiudi la finestra</button>
+      <h2>Bus FR8541</h2>
+      <ul>
+        <li>Fermata 1: Duomo</li>
+        <li>Fermata 2: Cadorna</li>
+      </ul>
+    </div>
+    <!-- 
      The `defer` attribute causes the callback to execute after the full HTML
      document has been parsed. For non-blocking uses, avoiding race conditions,
      and consistent behavior across browsers, consider loading using Promises
      with https://www.npmjs.com/package/@googlemaps/js-api-loader.
   -->
+<<<<<<< HEAD
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD85hNMINjgwkDxCJFgZo7YNTJQR2tGNtU&libraries=geometry&callback=initMap&v=weekly"
     defer></script>
@@ -87,6 +89,13 @@
 
   <script src="/js/finestra.js"></script>
 >>>>>>> 7b5bac9d7b26604711c73adf0d999fcd7584f10b
+=======
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD85hNMINjgwkDxCJFgZo7YNTJQR2tGNtU&libraries=geometry,places&callback=initMap&v=weekly"
+      defer></script>
+
+    <script src="/js/finestra.js"></script>
+>>>>>>> dfba7565c179359902127fb16e5a61810f4451cc
 </body>
 
 </html>
