@@ -2,7 +2,7 @@ BUS SIMULATOR
 -----------
 
 
-Di che cosa si tratta?
+**Di che cosa si tratta?**
 
 Il progetto Bus Simulator nasce con l'idea di tracciare i percorsi di quattro autobus
 percorrenti la città di Milano e poter fornire all'utente informazioni in tempo reale 
@@ -14,7 +14,7 @@ fermata richiesta tramite l'apposita barra,nonché di applicare dei filtri che p
 le informazioni specifiche su una linea in particolare.
 
 
-Qual'è l'obbiettivo?
+**Qual'è l'obbiettivo?**
 
 L'obbiettivo principale del progetto è visualizzare in tempo reale un mezzo di trasporto pubblico, in questo caso dei "bus" che percorrono una strada disegnata realmente.
 
@@ -23,10 +23,10 @@ Bus Simulator non si limita solo a mostrare la mobilità degli autobus in live,m
 sezione della nostra applicazione.
 
 
-![](https://miro.medium.com/max/640/1*sI5UusWBQgOEwHuMZWdskg.gif)
+![]()
 
 
-Con che strumenti è stato sviluppato?
+**Con che strumenti è stato sviluppato?**
 
 Tutto è stato realizzato con JavaScript con l'apposita libreria di Google Maps (https://developers.google.com/maps), inoltre abbiamo fatto uso di Java per quanto riguarda l'acquisto (simulato) di un biglietto di trasporto. 
 
