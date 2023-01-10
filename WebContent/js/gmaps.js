@@ -1,7 +1,7 @@
 // import della funzione "apri popup" preso dal file esterno
-import { openModal } from "../js/finestra.js";
-
-
+import { openModal } from "./finestra.js";
+ 
+ 
 // Funzione che fa partire maps
 function initMap() {
   // La mappa che centra la posizione di partenza
@@ -25,28 +25,30 @@ function initMap() {
       }
     ]
   });
-
+ 
   // Creazione del marker "partenza" bus rosso
   var marker_partenza = new google.maps.Marker({
     position: { lat: 45.466396217241524, lng: 9.197577245397706 },
     map: map,
     icon: {
-      url: "/img/IconaBusRosso.png",
+      url: "../img/IconaBusRosso.png",
       scaledSize: new google.maps.Size(50, 50), // Set the size of the marker image
       origin: new google.maps.Point(0, 0), // Set the origin point of the image
       anchor: new google.maps.Point(25, 50), // Set the anchor point for the image
       rotation: 45,
     }
   });
-
+ 
+  console.log(marker_partenza.getPosition());
+ 
   // Creazione array di markers per bus rosso
   var markerFermateRossa = [
     new google.maps.Marker({
       position: { lat: 45.46642621575427, lng: 9.197590291846295 },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -55,8 +57,8 @@ function initMap() {
       position: { lat: 45.465970429025646, lng: 9.197093688085612 },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -65,8 +67,8 @@ function initMap() {
       position: { lat: 45.46553707660491, lng: 9.195870511609105 },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -75,8 +77,8 @@ function initMap() {
       position: { lat: 45.464676209169134, lng: 9.192768826757328 },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -85,8 +87,8 @@ function initMap() {
       position: { lat: 45.463736621920305, lng: 9.192762447353758 },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -95,8 +97,8 @@ function initMap() {
       position: { lat: 45.463172852573805, lng: 9.187569061380524 },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -105,8 +107,8 @@ function initMap() {
       position: { lat: 45.463744354266986, lng: 9.18833490737487 },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -115,8 +117,8 @@ function initMap() {
       position: { lat: 45.46151936554318, lng: 9.185425894160376 },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -125,8 +127,8 @@ function initMap() {
       position: { lat: 45.46070923231423, lng: 9.18295840693557 },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -135,8 +137,8 @@ function initMap() {
       position: { lat: 45.460609461407735, lng: 9.182101140026067 },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -145,8 +147,8 @@ function initMap() {
       position: { lat: 45.460709283843826, lng: 9.180005835947252 },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -155,8 +157,8 @@ function initMap() {
       position: { lat: 45.46041508453437, lng: 9.177918175924725 },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -165,8 +167,8 @@ function initMap() {
       position: { lat: 45.46097775336577, lng: 9.175658272061987 },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -175,14 +177,14 @@ function initMap() {
       position: { lat: 45.46200737094371, lng: 9.174485216234782 },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
     }),
   ]
-
+ 
   //Creazione di un semplice array con le cordinate dei markers fermate rosse
   const percorsolineaRossa = [
     { lat: 45.46637089591075, lng: 9.197580963285544 },
@@ -229,9 +231,9 @@ function initMap() {
     { lat: 45.46171656760763, lng: 9.174557546858182 },
     { lat: 45.46200737094371, lng: 9.174485216234782 },
   ]
-
-
-
+ 
+ 
+ 
   // Creazione linea rossa trasparente di tutto il tragitto
   var polylineLineaRossa = new google.maps.Polyline({
     path: percorsolineaRossa,
@@ -240,75 +242,38 @@ function initMap() {
     strokeOpacity: 0.3,
     strokeWeight: 2,
   });
-// Creazione linea gialla trasparente di tutto il tragitto
-  const BusGiallo = new google.maps.Polyline({
-    path: percorsolineaGialla,
-    geodesic: true,
-    strokeColor: "#FFA500",
-    strokeOpacity: 0.5,
-    strokeWeight: 3,
-  });
-// Creazione linea verde trasparente di tutto il tragitto
-const busVerde = new google.maps.Polyline({
-  path: percorsolineaVerde,
-  geodesic: true,
-  strokeColor: "#008000",
-  strokeOpacity: 0.5,
-  strokeWeight: 3,
-});
-// Creazione linea verde trasparente di tutto il tragitto
-const busBlu = new google.maps.Polyline({
-  path: percorsolineaBlu,
-  geodesic: true,
-  strokeColor: "#0000FF",
-  strokeOpacity: 0.5,
-  strokeWeight: 3,
-});
-
+ 
+ 
   // creazione linea rossa dopo aver percorso un marker
-  const fermate_percorso_rosso = [
-    { lat: 45.46642621575427, lng: 9.197590291846295 }
+  const fermate_percorso = [
+    { lat: 45.466396217241524, lng: 9.197577245397706 }
   ]
-
-  // creazione linea gialla dopo aver percorso un marker
-  const fermate_percorso_giallo = [
-    { lat: 45.451844389509844, lng: 9.201601530134223 }
-  ]
-
-   // creazione linea verde dopo aver percorso un marker
-   const fermate_percorso_verde = [
-    { lat: 45.4719268913349, lng: 9.187643811796736 }
-  ]
-// creazione linea blu dopo aver percorso un marker
-   const fermate_percorso_blu = [
-    { lat: 45.47031802180396, lng: 9.176224573519715 }
-  ]
-
-
+ 
+ 
   // linea rossa viene impostato sulla mappa
   polylineLineaRossa.setMap(map);
-
-
-
+ 
+ 
+ 
   /////////////////////////////////////////////////////////////
-
+ 
   // Linea gialla
-
+ 
   // Creazione del marker "partenza" bus giallo
-
+ 
   var marker_partenza2 = new google.maps.Marker({
     position: { lat: 45.451844389509844, lng: 9.201601530134223 },
     map: map,
     icon: {
-      url: "/img/IconaBusGiallo.png",
+      url: "../img/IconaBusGiallo.png",
       scaledSize: new google.maps.Size(50, 50), // Set the size of the marker image
       origin: new google.maps.Point(0, 0), // Set the origin point of the image
       anchor: new google.maps.Point(25, 50), // Set the anchor point for the image
     },
   });
-
+ 
   //marker linea gialla 
-
+ 
   var markerFermateGialle = [
     new google.maps.Marker({
       position: {
@@ -316,8 +281,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -328,8 +293,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -340,8 +305,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -352,8 +317,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -364,8 +329,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -376,8 +341,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -388,8 +353,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -400,8 +365,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -412,8 +377,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -424,8 +389,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -436,8 +401,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -448,14 +413,14 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
     }),
   ]
-
+ 
   //cordinate marker linea gialla
   const percorsolineaGialla = [
     { lat: 45.451844389509844, lng: 9.201601530134223 },
@@ -519,7 +484,7 @@ const busBlu = new google.maps.Polyline({
     { lat: 45.470763271276695, lng: 9.193503243825472 },
     { lat: 45.47130545525693, lng: 9.194028322031231 },
   ]
-
+ 
   const fermate_percorso2 = [
     { lat: 45.451844389509844, lng: 9.201601530134223 }
   ]
@@ -532,24 +497,24 @@ const busBlu = new google.maps.Polyline({
     strokeWeight: 3,
     map: map,
   });
-
+ 
   /////////////////////////////////////////////////////////////
-
+ 
   // Linea verde
-
+ 
   // Creazione del marker "partenza" bus verde
-
+ 
   var marker_partenza3 = new google.maps.Marker({
     position: { lat: 45.4719268913349, lng: 9.187643811796736 },
     map: map,
     icon: {
-      url: "/img/IconaBusVerde.png",
+      url: "../img/IconaBusVerde.png",
       scaledSize: new google.maps.Size(50, 50), // Set the size of the marker image
       origin: new google.maps.Point(0, 0), // Set the origin point of the image
       anchor: new google.maps.Point(25, 50), // Set the anchor point for the image
     },
   });
-
+ 
   // marker percorso verde
   var markerFermateVerde = [
     new google.maps.Marker({
@@ -558,8 +523,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -570,8 +535,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -582,8 +547,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -594,8 +559,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -606,8 +571,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -618,8 +583,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -630,8 +595,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -642,8 +607,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -654,8 +619,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -666,8 +631,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -678,8 +643,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -690,8 +655,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -702,8 +667,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -714,8 +679,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -726,17 +691,17 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
     }),
   ]
-
+ 
   //cordinate marker linea verde
   const percorsolineaVerde = [
-
+ 
     { lat: 45.4719268913349, lng: 9.187643811796736 },
     { lat: 45.47231871390715, lng: 9.187548573410556 },
     { lat: 45.472200051909674, lng: 9.186815186495913 },
@@ -828,17 +793,17 @@ const busBlu = new google.maps.Polyline({
     { lat: 45.45773760534378, lng: 9.180968843062715 },
     { lat: 45.4581176460085, lng: 9.181001700122849 },
     { lat: 45.45822511085358, lng: 9.18102192505 },
-
+ 
   ]
-
-
-
+ 
+ 
+ 
   const fermate_percorso3 = [
     { lat: 45.4719268913349, lng: 9.187643811796736 }
   ]
-
-
-
+ 
+ 
+ 
   // Creazione linea verde trasparente di tutto il tragitto
   const polylineLineaVerde = new google.maps.Polyline({
     path: percorsolineaVerde,
@@ -848,25 +813,25 @@ const busBlu = new google.maps.Polyline({
     strokeWeight: 3,
     map: map,
   });
-
-
+ 
+ 
   /////////////////////////////////////////////////////////////
-
+ 
   // Linea blu
-
+ 
   // Creazione del marker "partenza" bus blu
-
+ 
   var marker_partenza4 = new google.maps.Marker({
     position: { lat: 45.47031802180396, lng: 9.176224573519715 },
     map: map,
     icon: {
-      url: "/img/IconaBusBlu.png",
+      url: "../img/IconaBusBlu.png",
       scaledSize: new google.maps.Size(50, 50), // Set the size of the marker image
       origin: new google.maps.Point(0, 0), // Set the origin point of the image
       anchor: new google.maps.Point(25, 50), // Set the anchor point for the image
     },
   });
-
+ 
   // marker percorso blu
   var markerFermateBlu = [
     new google.maps.Marker({
@@ -875,8 +840,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -887,8 +852,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -899,8 +864,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -911,8 +876,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -923,8 +888,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -935,8 +900,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -947,8 +912,8 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
@@ -959,18 +924,18 @@ const busBlu = new google.maps.Polyline({
       },
       map: map,
       icon: {
-        url: "/img/iconaFermata.png",
-        scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
+        url: "../img/iconaFermata.png",
+        scaledSize: new google.maps.Size(20, 20), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
       },
     }),
-
+ 
   ]
-
+ 
   //cordinate marker linea blu
   const percorsolineaBlu = [
-
+ 
     { lat: 45.47031802180396, lng: 9.176224573519715 },
     { lat: 45.46979378659463, lng: 9.175423037073964 },
     { lat: 45.46882327224273, lng: 9.176723366812379 },
@@ -1049,17 +1014,17 @@ const busBlu = new google.maps.Polyline({
     { lat: 45.46135567072694, lng: 9.194371275740052 },
     { lat: 45.46113281819028, lng: 9.194514124582318 },
     { lat: 45.460476137889046, lng: 9.19392034156194 },
-
+ 
   ]
-
-
-
+ 
+ 
+ 
   const fermate_percorso4 = [
     { lat: 45.47031802180396, lng: 9.176224573519715 }
   ]
-
-
-
+ 
+ 
+ 
   // Creazione linea blu trasparente di tutto il tragitto
   const polylineLineaBlu = new google.maps.Polyline({
     path: percorsolineaBlu,
@@ -1069,11 +1034,11 @@ const busBlu = new google.maps.Polyline({
     strokeWeight: 3,
     map: map,
   });
-
-
+ 
+ 
   /////////////////////////////////////////////// FUNZIONI PER AVANZARE I VARI BUS
-
-
+ 
+ 
   // Linee dei vari bus quando hanno già attraversato il percorso
   var fermateLineaRossa_percorso = new google.maps.Polyline({
     path: fermate_percorso,
@@ -1091,7 +1056,7 @@ const busBlu = new google.maps.Polyline({
     strokeWeight: 2,
     map: map,
   });
-
+ 
   var fermateLineaVerde_percorso = new google.maps.Polyline({
     path: fermate_percorso3,
     geodesic: true,
@@ -1100,7 +1065,7 @@ const busBlu = new google.maps.Polyline({
     strokeWeight: 2,
     map: map,
   });
-
+ 
   var fermateLineaBlu_percorso = new google.maps.Polyline({
     path: fermate_percorso4,
     geodesic: true,
@@ -1109,8 +1074,8 @@ const busBlu = new google.maps.Polyline({
     strokeWeight: 2,
     map: map,
   });
-
-
+ 
+ 
   // creo una funzione con i che parte da 0 e continua con l'intervallo
   var i = 0; var i2 = 0; var i3 = 0; var i4 = 0;
   // funzione che muove il bus settando una nuova posizione nel marker_partenza
@@ -1121,14 +1086,14 @@ const busBlu = new google.maps.Polyline({
       // creo una variabile che crea una polinea e si aggiorna man mano che il marker si muove
       fermateLineaRossa_percorso.setPath(fermate_percorso);
       i++;
-
+ 
     }
     else {
       clearInterval(bus_interval_red);
     }
   }
-
-
+ 
+ 
   function moveBusYellow() {
     if (i2 < percorsolineaGialla.length) {
       marker_partenza2.setPosition(new google.maps.LatLng(percorsolineaGialla[i2].lat, percorsolineaGialla[i2].lng));
@@ -1141,7 +1106,7 @@ const busBlu = new google.maps.Polyline({
       clearInterval(bus_interval_yellow);
     }
   }
-
+ 
   function moveBusGreen() {
     if (i3 < percorsolineaVerde.length) {
       marker_partenza3.setPosition(new google.maps.LatLng(percorsolineaVerde[i3].lat, percorsolineaVerde[i3].lng));
@@ -1154,7 +1119,7 @@ const busBlu = new google.maps.Polyline({
       clearInterval(bus_interval_green);
     }
   }
-
+ 
   function moveBusBlu() {
     if (i4 < percorsolineaBlu.length) {
       marker_partenza4.setPosition(new google.maps.LatLng(percorsolineaBlu[i4].lat, percorsolineaBlu[i4].lng));
@@ -1167,7 +1132,7 @@ const busBlu = new google.maps.Polyline({
       clearInterval(bus_interval_blu);
     }
   }
-
+ 
   // funzione che quando clicchi una fermata o pullman esce un popup informazioni
   marker_partenza.addListener("click", openModal);
   marker_partenza2.addListener("click", openModal);
@@ -1177,46 +1142,26 @@ const busBlu = new google.maps.Polyline({
   marker_partenza2.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
   marker_partenza3.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
   marker_partenza4.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
-
+ 
   var bus_interval_red = setInterval(moveBusRed, 1000);
   var bus_interval_yellow = setInterval(moveBusYellow, 1000);
   var bus_interval_green = setInterval(moveBusGreen, 1000);
   var bus_interval_blu = setInterval(moveBusBlu, 1000);
-
+ 
   // Add an event listener to the marker
-
+ 
   ////////////////////////////////CHECK BOX
-  this.checkbox = [
-    function Rosso() {
-      let temp = document.getElementById("Rosso");
 
+ this.checkbox = [
+    function Rosso() {
+      let temp = document.getElementById("rosso");
+ 
       if (temp.checked) {
-        fermateLineaRossa_percorso.setVisible(true);
-        marker_partenza.setVisible(true);
-        polylineLineaRossa.setVisible(true);
-        markerFermateRossa.forEach(function (n) {
-          n.setVisible(true);
-        })
-      }
-      else {
         fermateLineaRossa_percorso.setVisible(false);
         marker_partenza.setVisible(false);
         polylineLineaRossa.setVisible(false);
         markerFermateRossa.forEach(function (n) {
           n.setVisible(false);
-        })
-
-      }
-    },
-    function Giallo() {
-      let temp = document.getElementById("Giallo");
-
-      if (temp.checked) {
-        fermateLineaGialla_percorso.setVisible(true);
-        marker_partenza2.setVisible(true);
-        polylineLineaGialla.setVisible(true);
-        markerFermateGialle.forEach(function (n) {
-          n.setVisible(true);
         })
       }
       else {
@@ -1226,17 +1171,34 @@ const busBlu = new google.maps.Polyline({
         markerFermateGialle.forEach(function (n) {
           n.setVisible(false);
         })
-
+        fermateLineaVerde_percorso.setVisible(false);
+        marker_partenza3.setVisible(false);
+        polylineLineaVerde.setVisible(false);
+        markerFermateVerde.forEach(function (n) {
+          n.setVisible(false);
+        })
+        fermateLineaBlu_percorso.setVisible(false);
+        marker_partenza4.setVisible(false);
+        polylineLineaBlu.setVisible(false);
+        markerFermateBlu.forEach(function (n) {
+          n.setVisible(false);
+        })
+        fermateLineaRossa_percorso.setVisible(true);
+        marker_partenza.setVisible(true);
+        polylineLineaRossa.setVisible(true);
+        markerFermateRossa.forEach(function (n) {
+          n.setVisible(true);
+        })
       }
     },
-    function Verde() {
-      let temp = document.getElementById("Verde");
-
+    function Giallo() {
+      let temp = document.getElementById("giallo");
+ 
       if (temp.checked) {
-        fermateLineaVerde_percorso.setVisible(true);
-        marker_partenza3.setVisible(true);
-        polylineLineaVerde.setVisible(true);
-        markerFermateVerde.forEach(function (n) {
+        fermateLineaGialla_percorso.setVisible(true);
+        marker_partenza2.setVisible(true);
+        polylineLineaGialla.setVisible(true);
+        markerFermateGialle.forEach(function (n) {
           n.setVisible(true);
         })
       }
@@ -1247,12 +1209,67 @@ const busBlu = new google.maps.Polyline({
         markerFermateVerde.forEach(function (n) {
           n.setVisible(false);
         })
-
+        fermateLineaBlu_percorso.setVisible(false);
+        marker_partenza4.setVisible(false);
+        polylineLineaBlu.setVisible(false);
+        markerFermateBlu.forEach(function (n) {
+          n.setVisible(false);
+        })
+        fermateLineaRossa_percorso.setVisible(false);
+        marker_partenza.setVisible(false);
+        polylineLineaRossa.setVisible(false);
+        markerFermateRossa.forEach(function (n) {
+          n.setVisible(false);
+        })
+        fermateLineaGialla_percorso.setVisible(true);
+        marker_partenza2.setVisible(true);
+        polylineLineaGialla.setVisible(true);
+        markerFermateGialle.forEach(function (n) {
+          n.setVisible(true);
+        })
+      }
+    },
+    function Verde() {
+      let temp = document.getElementById("verde");
+ 
+      if (temp.checked) {
+        fermateLineaVerde_percorso.setVisible(true);
+        marker_partenza3.setVisible(true);
+        polylineLineaVerde.setVisible(true);
+        markerFermateVerde.forEach(function (n) {
+          n.setVisible(true);
+        })
+      }
+      else {
+        fermateLineaVerde_percorso.setVisible(true);
+        marker_partenza3.setVisible(true);
+        polylineLineaVerde.setVisible(true);
+        markerFermateVerde.forEach(function (n) {
+          n.setVisible(true);
+        })
+        fermateLineaRossa_percorso.setVisible(false);
+        marker_partenza.setVisible(false);
+        polylineLineaRossa.setVisible(false);
+        markerFermateRossa.forEach(function (n) {
+          n.setVisible(false);
+        })
+        fermateLineaGialla_percorso.setVisible(false);
+        marker_partenza2.setVisible(false);
+        polylineLineaGialla.setVisible(false);
+        markerFermateGialle.forEach(function (n) {
+          n.setVisible(false);
+        })
+        fermateLineaBlu_percorso.setVisible(false);
+        marker_partenza4.setVisible(false);
+        polylineLineaBlu.setVisible(false);
+        markerFermateBlu.forEach(function (n) {
+          n.setVisible(false);
+        })
       }
     },
     function Blu() {
-      let temp = document.getElementById("Blu");
-
+      let temp = document.getElementById("blu");
+ 
       if (temp.checked) {
         fermateLineaBlu_percorso.setVisible(true);
         marker_partenza4.setVisible(true);
@@ -1262,45 +1279,100 @@ const busBlu = new google.maps.Polyline({
         })
       }
       else {
-        fermateLineaBlu_percorso.setVisible(false);
-        marker_partenza4.setVisible(false);
-        polylineLineaBlu.setVisible(false);
+        fermateLineaBlu_percorso.setVisible(true);
+        marker_partenza4.setVisible(true);
+        polylineLineaBlu.setVisible(true);
         markerFermateBlu.forEach(function (n) {
+          n.setVisible(true);
+        })
+        fermateLineaGialla_percorso.setVisible(false);
+        marker_partenza2.setVisible(false);
+        polylineLineaGialla.setVisible(false);
+        markerFermateGialle.forEach(function (n) {
           n.setVisible(false);
         })
-
+        fermateLineaRossa_percorso.setVisible(false);
+        marker_partenza.setVisible(false);
+        polylineLineaRossa.setVisible(false);
+        markerFermateRossa.forEach(function (n) {
+          n.setVisible(false);
+        })
+        fermateLineaVerde_percorso.setVisible(false);
+        marker_partenza3.setVisible(false);
+        polylineLineaVerde.setVisible(false);
+        markerFermateVerde.forEach(function (n) {
+          n.setVisible(false);
+        })
       }
-    }
+    },
+    function All() {
+      let temp = document.getElementById("all");
+ 
+      if (temp.checked) {
+        fermateLineaRossa_percorso.setVisible(false);
+        marker_partenza.setVisible(false);
+        polylineLineaRossa.setVisible(false);
+        markerFermateRossa.forEach(function (n) {
+          n.setVisible(false);
+        })
+      }
+      else {
+        fermateLineaGialla_percorso.setVisible(true);
+        marker_partenza2.setVisible(true);
+        polylineLineaGialla.setVisible(true);
+        markerFermateGialle.forEach(function (n) {
+          n.setVisible(true);
+        })
+        fermateLineaVerde_percorso.setVisible(true);
+        marker_partenza3.setVisible(true);
+        polylineLineaVerde.setVisible(true);
+        markerFermateVerde.forEach(function (n) {
+          n.setVisible(true);
+        })
+        fermateLineaBlu_percorso.setVisible(true);
+        marker_partenza4.setVisible(true);
+        polylineLineaBlu.setVisible(true);
+        markerFermateBlu.forEach(function (n) {
+          n.setVisible(true);
+        })
+        fermateLineaRossa_percorso.setVisible(true);
+        marker_partenza.setVisible(true);
+        polylineLineaRossa.setVisible(true);
+        markerFermateRossa.forEach(function (n) {
+          n.setVisible(true);
+        })
+      }
+    },
   ]
-
-
+ 
+ 
   //// BARRA DI RICERCA CHE TROVA E AGGIUNGE IL MARKER
-
+ 
   // Create the search box and link it to the UI element
   var marker;
   var input = document.getElementById('pac-input');
   var searchBox = new google.maps.places.SearchBox(input);
-
-
+ 
+ 
   // Bias the search box to the map
   map.addListener('bounds_changed', function () {
     searchBox.setBounds(map.getBounds());
   });
-
+ 
   // Listen for the event fired when the user selects a prediction and retrieve
   // more details for that place
   searchBox.addListener('places_changed', function () {
     var places = searchBox.getPlaces();
-
+ 
     if (places.length == 0) {
       return;
     }
-
+ 
     // Remove the previous marker from the map
     if (marker) {
       marker.setMap(null);
     }
-
+ 
     // For each place, get the icon, name and location
     var bounds = new google.maps.LatLngBounds();
     places.forEach(function (place) {
@@ -1308,23 +1380,23 @@ const busBlu = new google.maps.Polyline({
         console.log("Returned place contains no geometry");
         return;
       }
-
+ 
       // Create a marker for the place
       marker = new google.maps.Marker({
         map: map,
         title: place.name,
         position: place.geometry.location,
         icon: {
-          url: "/img/iosonoqui.png",
+          url: "../img/iosonoqui.png",
           scaledSize: new google.maps.Size(80, 80), // Set the size of the marker image
           origin: new google.maps.Point(0, 0), // Set the origin point of the image
           anchor: new google.maps.Point(25, 50), // Set the anchor point for the image
         }
       });
-
+ 
       // Add the marker to the map
       marker.setMap(map);
-
+ 
       if (place.geometry.viewport) {
         // Only geocodes have viewport.
         bounds.union(place.geometry.viewport);
@@ -1334,25 +1406,25 @@ const busBlu = new google.maps.Polyline({
     });
     map.fitBounds(bounds);
   });
-
-
-
+ 
+ 
+ 
   // Get the search input element
   var input = document.getElementById('search');
-
+ 
   // Bind the Autocomplete object to the search input
   var autocomplete = new google.maps.places.Autocomplete(input);
-
-
-
-
-
-
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
   /*
     /// CREAZIONE INFOWINDOW (popup delle fermate)
     const contentString =
@@ -1376,23 +1448,23 @@ const busBlu = new google.maps.Polyline({
     "(last visited June 22, 2009).</p>" +
     "</div>" +
     "</div>";
-    
+ 
   // Create the info window
   var infoWindow = new google.maps.InfoWindow();
-  
+ 
   // Set the content of the info window
   infoWindow.setContent('<h1>My Info Window</h1><p>Some content</p>');
-  
+ 
   // Add an event listener to the marker
   google.maps.event.addListener(markerFermateRossa[0], 'click', function() {
   // Open the info window
   infoWindow.open(map, markerFermateRossa[0]);
   });*/
-
-
-
+ 
+ 
+ 
   /////////////// TEMA SCURO
-
+ 
   /*
   // Imposta il tema scuro della mappa
   map.setOptions({styles: [
@@ -1470,78 +1542,78 @@ const busBlu = new google.maps.Polyline({
       ]
         } 
           )*/
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
   // PARTE SIMONE
-
+ 
   var content = [
     '<h1>Marker sfogo</h1><p>Evvai PoDio</p>',
     '<h1>Marker felicità</h1><p>Siiiiiii</p>',
     '<h1>Marker sfottimento</h1><p>Fanculo codice di merda</p>'
   ];
-
+ 
   let currentInfoWindow;
-
+ 
   markerFermateRossa.forEach(function (marker, i) {
     marker.addListener('click', function () {
       if (currentInfoWindow) {
         currentInfoWindow.close();
       }
-
+ 
       var infoWindow = new google.maps.InfoWindow({
         content: content[i]
       });
-
+ 
       infoWindow.open(map, marker);
       currentInfoWindow = infoWindow;
     });
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 }
 // fa partire la mappa di google all'avvio della pagina
 window.initMap = initMap;
-
-
-
+ 
+ 
+ 
   //moveBusRed(marker_partenza);
-
-
+ 
+ 
   //changeMarkerPosition(marker_partenza);
-
+ 
 /* var numDeltas = 100;
  var delay = 10; //milliseconds
  var i = 0;
  var deltaLat;
  var deltaLng;
-
-
-
-
+ 
+ 
+ 
+ 
  function transition(result) {
    i = 0;
    deltaLat = (result[0] - position[0]) / numDeltas;
    deltaLng = (result[1] - position[1]) / numDeltas;
    moveMarker();
  }
-
+ 
  function moveMarker() {
    position[0] += deltaLat;
    position[1] += deltaLng;
@@ -1553,7 +1625,7 @@ window.initMap = initMap;
      setTimeout(moveMarker, delay);
    }
  }*/
-
+ 
 /// DA RIVEDERE
 /*var bus_prova = new google.maps.Marker({
  position: percorsolineaRossa[1],
@@ -1565,12 +1637,100 @@ window.initMap = initMap;
    anchor: new google.maps.Point(20, 20) // Set the anchor point for the image  
  }
 });
-
+ 
 bus_prova.set("distance", 0);
-
+ 
 var interval = setInterval(function() {
 var distance = bus_prova.get("distance");
 var point = fermateLineaRossa.getPointAtDistance(distance);
 bus_prova.setPosition(point);
 bus_prova.set("distance", distance + 10); // Increase the distance by 10 meters
 }, 50); // 50 milliseconds = 50ms*/
+
+
+ /*this.checkbox = [
+    function Rosso() {
+      let temp = document.getElementById("Rosso");
+ 
+      if (temp.checked) {
+        fermateLineaRossa_percorso.setVisible(true);
+        marker_partenza.setVisible(true);
+        polylineLineaRossa.setVisible(true);
+        markerFermateRossa.forEach(function (n) {
+          n.setVisible(true);
+        })
+      }
+      else {
+        fermateLineaRossa_percorso.setVisible(false);
+        marker_partenza.setVisible(false);
+        polylineLineaRossa.setVisible(false);
+        markerFermateRossa.forEach(function (n) {
+          n.setVisible(false);
+        })
+ 
+      }
+    },
+    function Giallo() {
+      let temp = document.getElementById("Giallo");
+ 
+      if (temp.checked) {
+        fermateLineaGialla_percorso.setVisible(true);
+        marker_partenza2.setVisible(true);
+        polylineLineaGialla.setVisible(true);
+        markerFermateGialle.forEach(function (n) {
+          n.setVisible(true);
+        })
+      }
+      else {
+        fermateLineaGialla_percorso.setVisible(false);
+        marker_partenza2.setVisible(false);
+        polylineLineaGialla.setVisible(false);
+        markerFermateGialle.forEach(function (n) {
+          n.setVisible(false);
+        })
+ 
+      }
+    },
+    function Verde() {
+      let temp = document.getElementById("Verde");
+ 
+      if (temp.checked) {
+        fermateLineaVerde_percorso.setVisible(true);
+        marker_partenza3.setVisible(true);
+        polylineLineaVerde.setVisible(true);
+        markerFermateVerde.forEach(function (n) {
+          n.setVisible(true);
+        })
+      }
+      else {
+        fermateLineaVerde_percorso.setVisible(false);
+        marker_partenza3.setVisible(false);
+        polylineLineaVerde.setVisible(false);
+        markerFermateVerde.forEach(function (n) {
+          n.setVisible(false);
+        })
+ 
+      }
+    },
+    function Blu() {
+      let temp = document.getElementById("Blu");
+ 
+      if (temp.checked) {
+        fermateLineaBlu_percorso.setVisible(true);
+        marker_partenza4.setVisible(true);
+        polylineLineaBlu.setVisible(true);
+        markerFermateBlu.forEach(function (n) {
+          n.setVisible(true);
+        })
+      }
+      else {
+        fermateLineaBlu_percorso.setVisible(false);
+        marker_partenza4.setVisible(false);
+        polylineLineaBlu.setVisible(false);
+        markerFermateBlu.forEach(function (n) {
+          n.setVisible(false);
+        })
+ 
+      }
+    }
+  ]*/

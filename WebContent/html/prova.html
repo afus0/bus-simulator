@@ -11,6 +11,7 @@
 
 <body>
   <h3>My Google Maps Demo</h3>
+  <button id="open-modal-btn">Open Modal</button>
   <input id="search" type="text" placeholder="Dove ti trovi?">
   <div class="form-check">
     <input class="form-check-input" type="checkbox" value="" id="Rosso" onclick="checkbox[0]()" checked>
@@ -39,50 +40,89 @@
 
     </div>
 
+    <button id="open-modal-btn">Open Modal</button>
+
     <div id="modal" class="nascondi">
-      <button id="close-modal">Chiudi la finestra</button>
-      <h2>Bus FR8541</h2>
-      <ul>
-        <li>Fermata 1: Duomo</li>
-        <li>Fermata 2: Cadorna</li>
-      </ul>
+      <div id="primo">
+          <button id="close-modal-btn">&times;</button>
+          <br>
+          <h2 class="white">Bus C20</h2>
+      </div>
+      <img src="../img/linearossa.png" alt="" width="100%">
+
+      <div id="secondo">
+          <div id="partenza">
+              <h3>Partenza</h3>
+              <div id="terzo" class="white bg-black">
+                  <p>Duomo</p>
+              </div>
+              
+          </div>
+          <div id="iconaFreccia">
+              <i class="bi bi-arrow-right-square-fill"></i>
+          </div>
+          
+          <div id="arrivo">
+              <h3>Arrivo</h3>
+              <div id="quarto" class="white bg-black">
+                  <p>Cadorna</p>
+              </div>
+              
+          </div>
+      </div>
+
+      <div id="quinto">
+          <table>
+              <tr>
+                <td class="capoColonna">FERMATE</td>
+                <td class="capoColonna">ORARI</td>
+              </tr>
+              <tr>
+                <td>Duomo</td>
+                <td>11.45</td>
+              </tr>
+              <tr>
+                <td>Piazza Giulio</td>
+                <td>11.50</td>
+              </tr>
+              <tr>
+                <td>Vicolo Corto</td>
+                <td>12.00</td>
+              </tr>
+              <tr>
+                <td>Vicolo Stretto</td>
+                <td>12.10</td>
+              </tr>
+              <tr>
+                <td>Parco Vittoria</td>
+                <td>12.15</td>
+              </tr>
+              <tr>
+                <td>Stazione Nord</td>
+                <td>12.26</td>
+              </tr>
+              <tr>
+                <td>Cadorna</td>
+                <td>12.34</td>
+              </tr>
+            </table>
+      </div>
+
+      <div id="sesto">
+          <h3 class="white">Compra biglietto:</h3>
+          <p class="white">2.50€</p>
+          <i id="ticket" class="bi bi-cash-coin white"></i>
+      </div>
+      
     </div>
-    <!--second pullman -->
-    <div id="modal" class="nascondi">
-      <button id="close-modal">Chiudi la finestra</button>
-      <h2>Bus FR8541</h2>
-      <ul>
-        <li>Fermata 1: Duomo</li>
-        <li>Fermata 2: Cadorna</li>
-      </ul>
-    </div>
-    <!--terzo pullman -->
-    <div id="modal" class="nascondi">
-      <button id="close-modal">Chiudi la finestra</button>
-      <h2>Bus FR8541</h2>
-      <ul>
-        <li>Fermata 1: Duomo</li>
-        <li>Fermata 2: Cadorna</li>
-      </ul>
-    </div>
-    <div id="modal" class="nascondi">
-      <button id="close-modal">Chiudi la finestra</button>
-      <h2>Bus FR8541</h2>
-      <ul>
-        <li>Fermata 1: Duomo</li>
-        <li>Fermata 2: Cadorna</li>
-      </ul>
-    </div>
+
+  <div id="overlay" class="nascondi"></div>
     <!-- 
      The `defer` attribute causes the callback to execute after the full HTML
      document has been parsed. For non-blocking uses, avoiding race conditions,
      and consistent behavior across browsers, consider loading using Promises
      with https://www.npmjs.com/package/@googlemaps/js-api-loader.
   -->
-
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD85hNMINjgwkDxCJFgZo7YNTJQR2tGNtU&libraries=geometry&callback=initMap&v=weekly"
-    defer></script>
 
   <script src="../js/finestra.js"></script>
     <script
