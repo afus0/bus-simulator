@@ -1,192 +1,147 @@
 #gormito {
-    width: 20%;
-    height: 800px;
-    background-color: rgb(64, 127, 220);
-    border-radius: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.8;
+  width: 20%;
+  height: 800px;
+  background-color: rgb(64, 127, 220);
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
 }
-#modal {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 20%;
-    max-width: 600px;
-    height: auto;
-    background-color: #FF8C00;
-    color: #000;
-    overflow: auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: 100;
-  }
-  
-  #modal h2 {
-    margin: 0;
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  #modal img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-  }
-  
-  #modal p {
-    text-align:justify;
-    margin: 10px 0;
-    margin-left: 20px;
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  
-  #modal ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  
-  #modal li {
-    margin-left: 30px;
-    margin: 10px 0;
-  }
-  
-  #modal #close-modal {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #000;
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-  }
-  
-  #modal #close-modal:hover {
-    color: #FF8C00;
-  }
-
- 
-  
-  #overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 50;
-  }
-
-  #modal {
-    width: 20%;
-    height: 870px;
-    background-color: #d2611a;
-    color: black;
-    border-radius: 5px;
-  }
-
-#close-modal-btn {
-    border: none;
-    position: fixed;
-    background-color: #d2611a;
-    border-radius: 5px;
-    margin: 2px;
+#modal, #modal1, #modal2, #modal3 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 20%;
+  max-width: 600px;
+  height: auto;
+  background-color: #FF8C00;
+  color: #000;
+  overflow: auto;
+  padding: 0px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 100;
 }
 
+
+#overlay, #overlay1, #overlay2, #overlay3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 50;
+}
+
+#modal, #modal1, #modal2, #modal3 {
+  width: 20%;
+  height: 870px;
+  background-color: #d2611a;
+  color: black;
+  border-radius: 5px;
+}
+
+#close-modal-btn, #close-modal-btn1, #close-modal-btn2, #close-modal-btn3 {
+  border: none;
+  position: fixed;
+  background-color: #d2611a;
+  border-radius: 5px;
+  margin: 2px;
+}
+h2{
+text-align: center;
+
+}
 
 #primo {
-    background-color: black;
-    border-radius: 5px;
-    height: 70px;
-    
+  background-color: black;
+  border-radius: 5px;
+  height: 70px;
 }
 
 .white {
-    color: wheat;
+  color: wheat;
 }
 
 #secondo {
-    display: flex;
-    padding: 1%;
-    justify-content: space-around;
-    border: 3px solid black;
-    margin-top: -10px;
-    
+  display: flex;
+  padding: 1%;
+  justify-content: space-around;
+  /*border: 3px solid black;*/
+  border-radius: 5px;
+  margin-top: 5px;
+
 }
 
 #iconaFreccia {
-    margin-top: 15px;
-    font-size: 30px
+  margin-top: 15px;
+  font-size: 30px
 }
 
 .bg-black {
-    background-color: black;
+  background-color: black;
 }
 
 #terzo {
-    height: 50px;
-    border-radius: 5px;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    
+  height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
 }
 
 #quarto {
-    height: 50px;
-    border-radius: 5px;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+  height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
+
+
 table {
-    margin-top: 20px;
-    padding: 10px;
-    text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
 }
 
 td {
-    border: 3px solid black;
-    border-radius: 5px;
+
+  border: 3px solid black;
+  border-radius: 5px;
 }
 
 #quinto {
-    display: flex;
-    text-align: center;
-    justify-content: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .capoColonna {
-    font-size: larger;
-    font-weight: bolder;
+  font-size: larger;
+  font-weight: bolder;
 }
 
 #sesto {
-    text-align: center;
-    background-color: black;
-    height: 130px;
-    border-radius: 5px;
+  text-align: center;
+  background-color: black;
+  height: 130px;
+  border-radius: 5px;
 }
 
 
 #ticket {
-    font-size: 40px;
+  font-size: 40px;
 }
-  
 
 .nascondi {
-    display: none;
+  display: none;
 }

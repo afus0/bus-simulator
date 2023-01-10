@@ -1,5 +1,5 @@
 // import della funzione "apri popup" preso dal file esterno
-import { openModal } from "./finestra.js";
+import { openModal, openModal1, openModal2, openModal3 } from "./finestra.js";
 
 
 // Funzione che fa partire maps
@@ -31,7 +31,7 @@ function initMap() {
     position: { lat: 45.466396217241524, lng: 9.197577245397706 },
     map: map,
     icon: {
-      url: "/img/IconaBusRosso.png",
+      url: "/bus-simulator/img/IconaBusRosso.png",
       scaledSize: new google.maps.Size(50, 50), // Set the size of the marker image
       origin: new google.maps.Point(0, 0), // Set the origin point of the image
       anchor: new google.maps.Point(25, 50), // Set the anchor point for the image
@@ -47,7 +47,7 @@ function initMap() {
       position: { lat: 45.46642621575427, lng: 9.197590291846295 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -57,7 +57,7 @@ function initMap() {
       position: { lat: 45.465970429025646, lng: 9.197093688085612 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -67,7 +67,7 @@ function initMap() {
       position: { lat: 45.46553707660491, lng: 9.195870511609105 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -77,7 +77,7 @@ function initMap() {
       position: { lat: 45.464676209169134, lng: 9.192768826757328 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -87,7 +87,7 @@ function initMap() {
       position: { lat: 45.463736621920305, lng: 9.192762447353758 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -97,7 +97,7 @@ function initMap() {
       position: { lat: 45.463172852573805, lng: 9.187569061380524 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -107,7 +107,7 @@ function initMap() {
       position: { lat: 45.463744354266986, lng: 9.18833490737487 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -117,7 +117,7 @@ function initMap() {
       position: { lat: 45.46151936554318, lng: 9.185425894160376 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -127,7 +127,7 @@ function initMap() {
       position: { lat: 45.46070923231423, lng: 9.18295840693557 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -137,7 +137,7 @@ function initMap() {
       position: { lat: 45.460609461407735, lng: 9.182101140026067 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -147,7 +147,7 @@ function initMap() {
       position: { lat: 45.460709283843826, lng: 9.180005835947252 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -157,7 +157,7 @@ function initMap() {
       position: { lat: 45.46041508453437, lng: 9.177918175924725 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -167,7 +167,7 @@ function initMap() {
       position: { lat: 45.46097775336577, lng: 9.175658272061987 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -177,7 +177,7 @@ function initMap() {
       position: { lat: 45.46200737094371, lng: 9.174485216234782 },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -265,7 +265,7 @@ function initMap() {
     position: { lat: 45.451844389509844, lng: 9.201601530134223 },
     map: map,
     icon: {
-      url: "/img/IconaBusGiallo.png",
+      url: "/bus-simulator/img/IconaBusGiallo.png",
       scaledSize: new google.maps.Size(50, 50), // Set the size of the marker image
       origin: new google.maps.Point(0, 0), // Set the origin point of the image
       anchor: new google.maps.Point(25, 50), // Set the anchor point for the image
@@ -281,7 +281,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -293,7 +293,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -305,7 +305,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -317,7 +317,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -329,7 +329,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -341,7 +341,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -353,7 +353,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -365,7 +365,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -377,7 +377,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -389,7 +389,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -401,7 +401,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -413,7 +413,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -508,7 +508,7 @@ function initMap() {
     position: { lat: 45.4719268913349, lng: 9.187643811796736 },
     map: map,
     icon: {
-      url: "/img/IconaBusVerde.png",
+      url: "/bus-simulator/img/IconaBusVerde.png",
       scaledSize: new google.maps.Size(50, 50), // Set the size of the marker image
       origin: new google.maps.Point(0, 0), // Set the origin point of the image
       anchor: new google.maps.Point(25, 50), // Set the anchor point for the image
@@ -523,7 +523,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -535,7 +535,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -547,7 +547,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -559,7 +559,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -571,7 +571,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -583,7 +583,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -595,7 +595,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -607,7 +607,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -619,7 +619,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -631,7 +631,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -643,7 +643,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -655,7 +655,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -667,7 +667,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -679,7 +679,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -691,7 +691,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -825,7 +825,7 @@ function initMap() {
     position: { lat: 45.47031802180396, lng: 9.176224573519715 },
     map: map,
     icon: {
-      url: "/img/IconaBusBlu.png",
+      url: "/bus-simulator/img/IconaBusBlu.png",
       scaledSize: new google.maps.Size(50, 50), // Set the size of the marker image
       origin: new google.maps.Point(0, 0), // Set the origin point of the image
       anchor: new google.maps.Point(25, 50), // Set the anchor point for the image
@@ -840,7 +840,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -852,7 +852,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -864,7 +864,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -876,7 +876,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -888,7 +888,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -900,7 +900,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -912,7 +912,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -924,7 +924,7 @@ function initMap() {
       },
       map: map,
       icon: {
-        url: "/img/Fermata.png",
+        url: "/bus-simulator/img/iconaFermata.png",
         scaledSize: new google.maps.Size(12, 12), // Set the size of the marker image
         origin: new google.maps.Point(0, 0), // Set the origin point of the image
         anchor: new google.maps.Point(0, 0), // Set the anchor point for the image
@@ -1135,9 +1135,9 @@ function initMap() {
 
   // funzione che quando clicchi una fermata o pullman esce un popup informazioni
   marker_partenza.addListener("click", openModal);
-  marker_partenza2.addListener("click", openModal);
-  marker_partenza3.addListener("click", openModal);
-  marker_partenza4.addListener("click", openModal);
+  marker_partenza2.addListener("click", openModal1);
+  marker_partenza3.addListener("click", openModal2);
+  marker_partenza4.addListener("click", openModal3);
   marker_partenza.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
   marker_partenza2.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
   marker_partenza3.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
@@ -1151,6 +1151,7 @@ function initMap() {
   // Add an event listener to the marker
 
   ////////////////////////////////CHECK BOX
+  /*
   this.checkbox = [
     function Rosso() {
       let temp = document.getElementById("Rosso");
@@ -1236,6 +1237,198 @@ function initMap() {
 
       }
     }
+  ]*/
+  this.checkbox = [
+    function Rosso() {
+      let temp = document.getElementById("rosso");
+ 
+      if (temp.checked) {
+        fermateLineaRossa_percorso.setVisible(false);
+        marker_partenza.setVisible(false);
+        polylineLineaRossa.setVisible(false);
+        markerFermateRossa.forEach(function (n) {
+          n.setVisible(false);
+        })
+      }
+      else {
+        fermateLineaGialla_percorso.setVisible(false);
+        marker_partenza2.setVisible(false);
+        polylineLineaGialla.setVisible(false);
+        markerFermateGialle.forEach(function (n) {
+          n.setVisible(false);
+        })
+        fermateLineaVerde_percorso.setVisible(false);
+        marker_partenza3.setVisible(false);
+        polylineLineaVerde.setVisible(false);
+        markerFermateVerde.forEach(function (n) {
+          n.setVisible(false);
+        })
+        fermateLineaBlu_percorso.setVisible(false);
+        marker_partenza4.setVisible(false);
+        polylineLineaBlu.setVisible(false);
+        markerFermateBlu.forEach(function (n) {
+          n.setVisible(false);
+        })
+        fermateLineaRossa_percorso.setVisible(true);
+        marker_partenza.setVisible(true);
+        polylineLineaRossa.setVisible(true);
+        markerFermateRossa.forEach(function (n) {
+          n.setVisible(true);
+        })
+      }
+    },
+    function Giallo() {
+      let temp = document.getElementById("giallo");
+ 
+      if (temp.checked) {
+        fermateLineaGialla_percorso.setVisible(true);
+        marker_partenza2.setVisible(true);
+        polylineLineaGialla.setVisible(true);
+        markerFermateGialle.forEach(function (n) {
+          n.setVisible(true);
+        })
+      }
+      else {
+        fermateLineaVerde_percorso.setVisible(false);
+        marker_partenza3.setVisible(false);
+        polylineLineaVerde.setVisible(false);
+        markerFermateVerde.forEach(function (n) {
+          n.setVisible(false);
+        })
+        fermateLineaBlu_percorso.setVisible(false);
+        marker_partenza4.setVisible(false);
+        polylineLineaBlu.setVisible(false);
+        markerFermateBlu.forEach(function (n) {
+          n.setVisible(false);
+        })
+        fermateLineaRossa_percorso.setVisible(false);
+        marker_partenza.setVisible(false);
+        polylineLineaRossa.setVisible(false);
+        markerFermateRossa.forEach(function (n) {
+          n.setVisible(false);
+        })
+        fermateLineaGialla_percorso.setVisible(true);
+        marker_partenza2.setVisible(true);
+        polylineLineaGialla.setVisible(true);
+        markerFermateGialle.forEach(function (n) {
+          n.setVisible(true);
+        })
+      }
+    },
+    function Verde() {
+      let temp = document.getElementById("verde");
+ 
+      if (temp.checked) {
+        fermateLineaVerde_percorso.setVisible(true);
+        marker_partenza3.setVisible(true);
+        polylineLineaVerde.setVisible(true);
+        markerFermateVerde.forEach(function (n) {
+          n.setVisible(true);
+        })
+      }
+      else {
+        fermateLineaVerde_percorso.setVisible(true);
+        marker_partenza3.setVisible(true);
+        polylineLineaVerde.setVisible(true);
+        markerFermateVerde.forEach(function (n) {
+          n.setVisible(true);
+        })
+        fermateLineaRossa_percorso.setVisible(false);
+        marker_partenza.setVisible(false);
+        polylineLineaRossa.setVisible(false);
+        markerFermateRossa.forEach(function (n) {
+          n.setVisible(false);
+        })
+        fermateLineaGialla_percorso.setVisible(false);
+        marker_partenza2.setVisible(false);
+        polylineLineaGialla.setVisible(false);
+        markerFermateGialle.forEach(function (n) {
+          n.setVisible(false);
+        })
+        fermateLineaBlu_percorso.setVisible(false);
+        marker_partenza4.setVisible(false);
+        polylineLineaBlu.setVisible(false);
+        markerFermateBlu.forEach(function (n) {
+          n.setVisible(false);
+        })
+      }
+    },
+    function Blu() {
+      let temp = document.getElementById("blu");
+ 
+      if (temp.checked) {
+        fermateLineaBlu_percorso.setVisible(true);
+        marker_partenza4.setVisible(true);
+        polylineLineaBlu.setVisible(true);
+        markerFermateBlu.forEach(function (n) {
+          n.setVisible(true);
+        })
+      }
+      else {
+        fermateLineaBlu_percorso.setVisible(true);
+        marker_partenza4.setVisible(true);
+        polylineLineaBlu.setVisible(true);
+        markerFermateBlu.forEach(function (n) {
+          n.setVisible(true);
+        })
+        fermateLineaGialla_percorso.setVisible(false);
+        marker_partenza2.setVisible(false);
+        polylineLineaGialla.setVisible(false);
+        markerFermateGialle.forEach(function (n) {
+          n.setVisible(false);
+        })
+        fermateLineaRossa_percorso.setVisible(false);
+        marker_partenza.setVisible(false);
+        polylineLineaRossa.setVisible(false);
+        markerFermateRossa.forEach(function (n) {
+          n.setVisible(false);
+        })
+        fermateLineaVerde_percorso.setVisible(false);
+        marker_partenza3.setVisible(false);
+        polylineLineaVerde.setVisible(false);
+        markerFermateVerde.forEach(function (n) {
+          n.setVisible(false);
+        })
+      }
+    },
+    function All() {
+      let temp = document.getElementById("all");
+ 
+      if (temp.checked) {
+        fermateLineaRossa_percorso.setVisible(false);
+        marker_partenza.setVisible(false);
+        polylineLineaRossa.setVisible(false);
+        markerFermateRossa.forEach(function (n) {
+          n.setVisible(false);
+        })
+      }
+      else {
+        fermateLineaGialla_percorso.setVisible(true);
+        marker_partenza2.setVisible(true);
+        polylineLineaGialla.setVisible(true);
+        markerFermateGialle.forEach(function (n) {
+          n.setVisible(true);
+        })
+        fermateLineaVerde_percorso.setVisible(true);
+        marker_partenza3.setVisible(true);
+        polylineLineaVerde.setVisible(true);
+        markerFermateVerde.forEach(function (n) {
+          n.setVisible(true);
+        })
+        fermateLineaBlu_percorso.setVisible(true);
+        marker_partenza4.setVisible(true);
+        polylineLineaBlu.setVisible(true);
+        markerFermateBlu.forEach(function (n) {
+          n.setVisible(true);
+        })
+        fermateLineaRossa_percorso.setVisible(true);
+        marker_partenza.setVisible(true);
+        polylineLineaRossa.setVisible(true);
+        markerFermateRossa.forEach(function (n) {
+          n.setVisible(true);
+        })
+      }
+    },
   ]
 
 
@@ -1280,7 +1473,7 @@ function initMap() {
         title: place.name,
         position: place.geometry.location,
         icon: {
-          url: "/img/iosonoqui.png",
+          url: "/bus-simulator/img/iosonoqui.png",
           scaledSize: new google.maps.Size(80, 80), // Set the size of the marker image
           origin: new google.maps.Point(0, 0), // Set the origin point of the image
           anchor: new google.maps.Point(25, 50), // Set the anchor point for the image
@@ -1442,33 +1635,186 @@ function initMap() {
 
   // PARTE SIMONE
 
+
+
+
+
   var content = [
-    '<h1>Marker sfogo</h1><p>Evvai PoDio</p>',
-    '<h1>Marker felicità</h1><p>Siiiiiii</p>',
-    '<h1>Marker sfottimento</h1><p>Fanculo codice di merda</p>'
-  ];
-
+    '<div style="text-align: center;">' +
+    '<h1 style="font-size: 30px;">Lanzone</h1>' +
+    '<img src="/bus-simulator/img/Bus/linearossa/RLanzone.png" alt="Immagine della fermata" style="float: left; margin-right: 10px;">' +
+    '<p style="font-size: 16px; font-style:italic;">Corso Vittorio Emanuele II 3</p>' +
+  '</div>',
+    '<div style="text-align: center;">' +
+    '<h1 style="font-size: 30px;">Lanzone Alto</h1>' +
+    '<img src="/bus-simulator/img/Bus/linearossa/RLanzone2.png" alt="Immagine della fermata" style="float: left; margin-right: 10px;">' +
+    '<p style="font-size: 16px; font-style:italic;">Corso Vittorio Emanuele II 7</p>' +
+  '</div>',
+    '<div style="text-align: center;">' +
+    '<h1 style="font-size: 30px;">Lanzone Basso</h1>' +
+    '<img src="/bus-simulator/img/Bus/linearossa/RLanzone3.png" alt="Immagine della fermata" style="float: left; margin-right: 10px;">' +
+    '<p style="font-size: 16px; font-style:italic;">Corso Vittorio Emanuele II 12</p>' +
+  '</div>',
+    '<div style="text-align: center;">' +
+    '<h1 style="font-size: 30px;">Duomo</h1>' +
+    '<img src="/bus-simulator/img/Bus/linearossa/RDuomo.png" alt="Immagine della fermata" style="float: left; margin-right: 10px;">' +
+    '<p style="font-size: 16px; font-style:italic;">Piazza del Duomo</p>' +
+  '</div>',
+    ];
+ 
   let currentInfoWindow;
-
+ 
   markerFermateRossa.forEach(function (marker, i) {
     marker.addListener('click', function () {
       if (currentInfoWindow) {
         currentInfoWindow.close();
       }
-
+ 
       var infoWindow = new google.maps.InfoWindow({
         content: content[i]
       });
-
+ 
+      infoWindow.setOptions({
+        borderColor: '#FF0000'
+      });
+ 
       infoWindow.open(map, marker);
       currentInfoWindow = infoWindow;
     });
   });
-
-
-
-
-
+ 
+  var content2 = [
+    '<div style="text-align: center;">' +
+    '<h1 style="font-size: 30px;">Cairoli</h1>' +
+    '<img src="/bus-simulator/img/Bus/lineablu/BCairoli.png" alt="Immagine della fermata" style="float: left; margin-right: 10px;">' +
+    '<p style="font-size: 16px; font-style:italic;">Viale Gadio 2</p>' +
+  '</div>',
+    '<div style="text-align: center;">' +
+    '<h1 style="font-size: 30px;">Bonaparte</h1>' +
+    '<img src="/bus-simulator/img/Bus/lineablu/BDuomo.png" alt="Immagine della fermata" style="float: left; margin-right: 10px;">' +
+    '<p style="font-size: 16px; font-style:italic;">Foro Buonaparte 27</p>' +
+  '</div>',
+    '<div style="text-align: center;">' +
+    '<h1 style="font-size: 30px;">Prospero</h1>' +
+    '<img src="/bus-simulator/img/Bus/lineablu/BProspero.png" alt="Immagine della fermata" style="float: left; margin-right: 10px;">' +
+    '<p style="font-size: 16px; font-style:italic;">Viale San Prospero 5</p>' +
+  '</div>',
+    '<div style="text-align: center;">' +
+    '<h1 style="font-size: 30px;">Gran Piazza Thomas da Varese</h1>' +
+    '<img src="/bus-simulator/img/Bus/linearossa/RDuomo.png" alt="Immagine della fermata" style="float: left; margin-right: 10px;">' +
+    '<p style="font-size: 16px; font-style:italic;">Piazza del Siummmmmmmmm</p>' +
+  '</div>',
+  ];
+ 
+ 
+  markerFermateBlu.forEach(function (marker, i) {
+    marker.addListener('click', function () {
+      if (currentInfoWindow) {
+        currentInfoWindow.close();
+      }
+ 
+      var infoWindow = new google.maps.InfoWindow({
+        content: content2[i]
+      });
+ 
+      infoWindow.setOptions({
+        borderColor: '#FF0000'
+      });
+ 
+      infoWindow.open(map, marker);
+      currentInfoWindow = infoWindow;
+    });
+  });
+ 
+  var content3 = [
+  '<div style="text-align: center;">' +
+    '<h1 style="font-size: 30px;">Sforza</h1>' +
+    '<img src="/bus-simulator/img/Bus/lineagialla/GSforza.png" alt="Immagine della fermata" style="float: left; margin-right: 10px;">' +
+    '<p style="font-size: 16px; font-style:italic;">Via Angelo Filippetti 30</p>' +
+  '</div>',
+  '<div style="text-align: center;">' +
+    '<h1 style="font-size: 30px;">Durini</h1>' +
+    '<img src="/bus-simulator/img/Bus/lineagialla/GDurini.png" alt="Immagine della fermata" style="float: left; margin-right: 10px;">' +
+    '<p style="font-size: 16px; font-style:italic;">Corso di Porta Romana 2</p>' +
+  '</div>',
+  '<div style="text-align: center;">' +
+    '<h1 style="font-size: 30px;">Lacerba</h1>' +
+    '<img src="/bus-simulator/img/Bus/lineagialla/GLacerba.png" alt="Immagine della fermata" style="float: left; margin-right: 10px;">' +
+    '<p style="font-size: 16px; font-style:italic;">Via della Commenda 4</p>' +
+  '</div>',
+  '<div style="text-align: center;">' +
+    '<h1 style="font-size: 30px;">Commenda</h1>' +
+    '<img src="/bus-simulator/img/Bus/lineagialla/GCommenda.png" alt="Immagine della fermata" style="float: left; margin-right: 10px;">' +
+    '<p style="font-size: 16px; font-style:italic;">Via della Commenda 14</p>' +
+  '</div>',
+  ];
+ 
+ 
+  markerFermateGialle.forEach(function (marker, i) {
+    marker.addListener('click', function () {
+      if (currentInfoWindow) {
+        currentInfoWindow.close();
+      }
+ 
+      var infoWindow = new google.maps.InfoWindow({
+        content: content3[i]
+      });
+ 
+      infoWindow.setOptions({
+        borderColor: '#FF0000'
+      });
+ 
+      infoWindow.open(map, marker);
+      currentInfoWindow = infoWindow;
+    });
+  });
+ 
+  var content4 = [
+    '<div style="text-align: center;">' +
+    '<h1 style="font-size: 30px;">Brera</h1>' +
+    '<img src="/bus-simulator/img/Bus/lineaverde/VBrera.png" alt="Immagine della fermata" style="float: left; margin-right: 10px;">' +
+    '<p style="font-size: 16px; font-style:italic;">Via Brera 5</p>' +
+  '</div>',
+  '<div style="text-align: center;">' +
+    '<h1 style="font-size: 30px;">Formentini</h1>' +
+    '<img src="/bus-simulator/img/Bus/lineaverde/VFormentini.png" alt="Immagine della fermata" style="float: left; margin-right: 10px;">' +
+    '<p style="font-size: 16px; font-style:italic;">Via Fiori Chiari 3</p>' +
+    '</div>',
+    '<div style="text-align: center;">' +
+    '<h1 style="font-size: 30px;">Mercato</h1>' +
+    '<img src="/bus-simulator/img/Bus/lineaverde/VMercato.png" alt="Immagine della fermata" style="float: left; margin-right: 10px;">' +
+    '<p style="font-size: 16px; font-style:italic;">Via Madonnina 7</p>' +
+  '</div>',
+    '<div style="text-align: center;">' +
+    '<h1 style="font-size: 30px;">Madonnina</h1>' +
+    '<img src="/bus-simulator/img/Bus/lineaverde/VMadonnina.png" alt="Immagine della fermata" style="float: left; margin-right: 10px;">' +
+    '<p style="font-size: 16px; font-style:italic;">Via Madonnina 15</p>' +
+  '</div>',
+  ];
+ 
+ 
+ 
+ 
+ 
+  markerFermateVerde.forEach(function (marker, i) {
+    marker.addListener('click', function () {
+      if (currentInfoWindow) {
+        currentInfoWindow.close();
+      }
+ 
+      var infoWindow = new google.maps.InfoWindow({
+        content: content4[i],
+      });
+ 
+      infoWindow.setOptions({
+        backgroundColor: '#000000',
+      borderColor: '#FF0000'
+      });
+ 
+      infoWindow.open(map, marker);
+      currentInfoWindow = infoWindow;
+    });
+  });
 
 
 
@@ -1524,7 +1870,7 @@ window.initMap = initMap;
  position: percorsolineaRossa[1],
  map: map,
  icon: {
-   url: "/img/BusRosso.png",
+   url: "/bus-simulator/img/BusRosso.png",
    scaledSize: new google.maps.Size(40, 40), // Set the size of the marker image
    origin: new google.maps.Point(0, 0), // Set the origin point of the image
    anchor: new google.maps.Point(20, 20) // Set the anchor point for the image  

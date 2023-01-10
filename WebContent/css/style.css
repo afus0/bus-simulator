@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
  
 :root {
     --header-height: 3rem;
@@ -6,7 +7,7 @@
     --first-color: #d2611a;
     --first-color-light: #ffffff;
     --white-color: #000000;
-    --body-font: 'Nunito', sans-serif;
+    --body-font: 'Nunito', sans-serif !important;
     --normal-font-size: 1rem;
     --z-fixed: 100
 }
@@ -14,7 +15,7 @@
 *,
 ::before,
 ::after {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
  
 body {
@@ -24,32 +25,32 @@ body {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     transition: .5s
-    
+ 
 }
  
 a {
     text-decoration: none 
 }
-
+ 
 .btn-outline-primary{
     background-color: #d2611a;
     color: #ffffff;
-
+ 
 }
-
+ 
 .btn-outline-primary :hover{
     background-color: #ffffff;
     color: #000000;
-
+ 
 }
-
+ 
 h5{
     margin-top: 4px;
     margin-left: 20px;
     color: var(--first-color);
     font-size: 20pt;
 }
-
+ 
 .header {
     width: 100%;
     height: var(--header-height);
@@ -64,36 +65,37 @@ h5{
     z-index: var(--z-fixed);
     transition: .5s
 }
-
-
+ 
+ 
  
 .header_toggle {
     color: var(--first-color);
     font-size: 1.5rem;
-    cursor: pointer
+    cursor: pointer;
+    margin-left: 15px;
 }
  
-.header_img {
-    width: 35px;
-    height: 35px;
-    display: flex;
+/*.header_img {
+     width: 100px;
+    height: 100px;
+   display: flex;
     justify-content: center;
     border-radius: 50%;
-    overflow: hidden
+   /overflow: hidden
 }
  
 .header_img img {
-    width: 40px
-}
-
+    width: 100px
+}*/
+ 
 #search{
     width: 40%;  
 }
-
+ 
 #img-profilo{
-    margin-left: 20px;
+    margin-left: 40px;
 }
-
+ 
 #first-search :hover{
     background-color:#d2611a !important;
 }
@@ -180,7 +182,7 @@ h5{
 .height-100 {
     height: 100vh
 }
-
+ 
  
 @media screen and (min-width: 768px) {
     body {
@@ -194,12 +196,12 @@ h5{
     }
  
     .header_img {
-        width: 40px;
-        height: 40px
+        width: 50px;
+        height: 50px
     }
  
     .header_img img {
-        width: 45px
+        width: 220px
     }
  
     .l-navbar {
@@ -212,9 +214,10 @@ h5{
     }
  
     .body-pd {
-        padding-left: calc(var(--nav-width) + 170px)
+        padding-left: calc(var(--nav-width) + 156px)
     }
-    #gmappa{
+    /*#gmappa{
         padding-left: calc(var(--nav-width))
-    }
+    }*/
+ 
 }
