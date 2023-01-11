@@ -30,7 +30,7 @@ sezione della nostra applicazione.
 ![](https://github.com/ImJimMoriarty/bus-simulator/blob/main/chrome_bCWxESzStT.gif)
 
 
-**Q: Con che strumenti è stato sviluppato?**
+**Q: Quali strumenti sono stati utilizzati per lo sviluppo del progetto?**
 
 Tutto è stato realizzato con JavaScript con l'apposita libreria di Google Maps (https://developers.google.com/maps), inoltre abbiamo fatto uso di Java per quanto riguarda l'acquisto (simulato) di un biglietto di trasporto. 
 
