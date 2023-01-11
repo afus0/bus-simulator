@@ -24,7 +24,7 @@ Bus Simulator non si limita solo a mostrare la mobilità degli autobus in live,m
 è anche disponibile una funzione di acquisto biglietti che riporta su una diversa 
 sezione della nostra applicazione.
 
-
+![](https://github.com/ImJimMoriarty/bus-simulator/blob/main/chrome_bCWxESzStT.gif)
 
 
 **Con che strumenti è stato sviluppato?**
