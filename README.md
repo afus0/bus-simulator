@@ -46,7 +46,7 @@ autonomo dei cinque sulla base delle loro inclinazioni e punti di forza.
 #### Il progetto è stato realizzato dalle seguenti persone:
 
 - Andrea Fuso (Project Manager) - [<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="13" height="13"/>](https://www.linkedin.com/in/andreafuso96/)
-- Giuseppe Marasco - [<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="13" height="13"/>](https://www.linkedin.com/in/giuseppe-marasco-426310258/)
+- Giuseppe Marasco (Developer) - [<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="13" height="13"/>](https://www.linkedin.com/in/giuseppe-marasco-426310258/)
 - Thomas Grande (Developer) - [<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="13" height="13"/>](https://www.linkedin.com/in/thomas-grande-5b3024205/)
 - Marcello Amprimo (Developer) - [<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="13" height="13"/>](https://www.linkedin.com/in/marcello-amprimo-3214a5170/)
 - Simone Compagnoni (Developer) - [<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="13" height="13"/>](https://www.linkedin.com/in/simone-compagnoni-55901824a/)
