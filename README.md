@@ -13,6 +13,8 @@ spostamento degli autobus e i relativi percorsi,fornisce la possibilità di cerc
 fermata richiesta tramite l'apposita barra,nonché di applicare dei filtri che permettono di visualizzare
 le informazioni specifiche su una linea in particolare.
 
+![](https://puu.sh/JwjYM/9c26c73f61.gif)
+
 
 **Qual'è l'obbiettivo?**
 
@@ -23,7 +25,6 @@ Bus Simulator non si limita solo a mostrare la mobilità degli autobus in live,m
 sezione della nostra applicazione.
 
 
-![](https://puu.sh/JwjYM/9c26c73f61.gif)
 
 
 **Con che strumenti è stato sviluppato?**
