@@ -1,8 +1,11 @@
-BUS SIMULATOR
------------
 
 
-**Di che cosa si tratta?**
+
+![](https://github.com/ImJimMoriarty/bus-simulator/blob/main/WebContent/img/Logobus.png)
+
+#
+
+**Q: Di che cosa si tratta?**
 
 Il progetto Bus Simulator nasce con l'idea di tracciare i percorsi di quattro autobus
 percorrenti la città di Milano e poter fornire all'utente informazioni in tempo reale 
@@ -16,7 +19,7 @@ le informazioni specifiche su una linea in particolare.
 ![](https://github.com/ImJimMoriarty/bus-simulator/blob/main/chrome_rpbkGSAbri.gif)
 
 
-**Qual'è l'obbiettivo?**
+**Q: Qual'è l'obbiettivo?**
 
 L'obbiettivo principale del progetto è visualizzare in tempo reale un mezzo di trasporto pubblico, in questo caso dei "bus" che percorrono una strada disegnata realmente.
 
@@ -27,7 +30,26 @@ sezione della nostra applicazione.
 ![](https://github.com/ImJimMoriarty/bus-simulator/blob/main/chrome_bCWxESzStT.gif)
 
 
-**Con che strumenti è stato sviluppato?**
+**Q: Con che strumenti è stato sviluppato?**
 
 Tutto è stato realizzato con JavaScript con l'apposita libreria di Google Maps (https://developers.google.com/maps), inoltre abbiamo fatto uso di Java per quanto riguarda l'acquisto (simulato) di un biglietto di trasporto. 
+
+**Q: Da chi è stato sviluppato?**
+
+L'applicazione è stata realizzata da cinque studenti di Generation Italy appassionati di programmazione che hanno messo in pratica 
+le competenze apprese durante il corso. 
+La collaborazione tra tutti,lo scambio di idee e consigli,nonché i breefing di inizio e termine giornata hanno creato un clima
+di lavoro chiaro,coinciso e piacevole che ha contribuito al raggiungimento dei risultati prefissati.
+Il tutto è stato reso possibile anche grazie al sistema Agile che ha incentivatto il lavoro
+autonomo dei cinque sulla base delle loro inclinazioni e punti di forza.
+
+#### Il progetto è stato realizzato dalle seguenti persone:
+
+- Andrea Fuso (Project Manager) - [<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="13" height="13"/>](https://www.linkedin.com/in/andreafuso96/)
+- Giuseppe Marasco - [<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="13" height="13"/>](https://www.linkedin.com/in/giuseppe-marasco-426310258/)
+- Thomas Grande (Developer) - [<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="13" height="13"/>](https://www.linkedin.com/in/thomas-grande-5b3024205/)
+- Marcello Amprimo (Developer) - [<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="13" height="13"/>](https://www.linkedin.com/in/marcello-amprimo-3214a5170/)
+- Simone Compagnoni (Developer) - [<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="13" height="13"/>](https://www.linkedin.com/in/simone-compagnoni-55901824a/)
+
+
 
