@@ -13,7 +13,7 @@ spostamento degli autobus e i relativi percorsi,fornisce la possibilità di cerc
 fermata richiesta tramite l'apposita barra,nonché di applicare dei filtri che permettono di visualizzare
 le informazioni specifiche su una linea in particolare.
 
-![](https://puu.sh/JwjYM/9c26c73f61.gif)
+![](https://github.com/ImJimMoriarty/bus-simulator/blob/main/chrome_rpbkGSAbri.gif)
 
 
 **Qual'è l'obbiettivo?**
