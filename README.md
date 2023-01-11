@@ -38,7 +38,7 @@ Tutto è stato realizzato con JavaScript con l'apposita libreria di Google Maps 
 
 L'applicazione è stata realizzata da cinque studenti di Generation Italy appassionati di programmazione che hanno messo in pratica 
 le competenze apprese durante il corso. 
-La collaborazione tra tutti,lo scambio di idee e consigli,nonché i breefing di inizio e termine giornata hanno creato un clima
+La collaborazione tra tutti,lo scambio di idee e consigli,nonché i briefing di inizio e termine giornata hanno creato un clima
 di lavoro chiaro,coinciso e piacevole che ha contribuito al raggiungimento dei risultati prefissati.
 Il tutto è stato reso possibile anche grazie al sistema Agile che ha incentivatto il lavoro
 autonomo dei cinque sulla base delle loro inclinazioni e punti di forza.
