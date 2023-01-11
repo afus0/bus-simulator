@@ -23,7 +23,7 @@ Bus Simulator non si limita solo a mostrare la mobilità degli autobus in live,m
 sezione della nostra applicazione.
 
 
-![]()
+![](https://puu.sh/JwjYM/9c26c73f61.gif)
 
 
 **Con che strumenti è stato sviluppato?**
